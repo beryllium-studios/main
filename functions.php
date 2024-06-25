@@ -111,4 +111,6 @@ function beryllium_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'beryllium_scripts', 0 );
 
-
+function echoV($e) {
+	print "session: <br><pre>".print_r($e, true)."</pre><BR>";
+}

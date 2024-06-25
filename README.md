@@ -1,7 +1,8 @@
- 
 
-Beryllium WP Theme
-===
+<p align="center">
+  <img src="https://raw.githubusercontent.com/beryllium-studios/main/main/assets/images/logo/full-black.svg" style="width: 180px">
+</p>
+  
 
 ## Theme Description
 This theme is custom built for Beryllium Studios. With a sleek and modern design, this theme emphasizes usability and visual appeal, ensuring a seamless user experience for visitors interested in AI-driven solutions.

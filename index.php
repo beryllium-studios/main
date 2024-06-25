@@ -6,22 +6,25 @@ include 'template-parts/navbar.php';
 ?>
 
 
-<!-- Intro -->
-<header class="header-page header-page--half js-opacity">
-	<div class="container">
-		<!-- Title -->
-		<h6 class="title title--overhead title--tail">Beryllium Studios</h6>
-		<h1 class="title title--display-1 js-lines"><?php _e('Transforming Your Ideas into Cutting-Edge AI Solutions for Business Success', 'beryllium'); ?></h1>
-		<!-- /Title -->
-	</div>
-</header>
-<!-- /Intro -->
-
-<!-- Image -->
-<figure class="image-container jarallax reveal">
-	<img class="jarallax-img cover lazyload" src="<?php echo get_template_directory_uri(); ?>/assets/images/brand-art-ai-large.jpg" alt="" />
-</figure>
-<!-- /Image -->
+	<!-- Intro -->
+	<header class="header-page header-fullscreen header-page--gutterBottom overlay overlay--45 js-image jarallax" data-image="<?php echo get_template_directory_uri(); ?>/assets/images/brand-art-ai-large.jpg">
+		<div class="home-header-title">
+			<h1>Welcome to Beryllium Studios</h1>
+			<h2>Your trusted IT consulting partner specializing in <br> AI integration for small to medium-sized businesses</h2>
+			<a href="<?php echo get_site_url(); ?>/contact" class="white">GET YOUR PROJECT STARTED</a>
+		</div>
+		<div class="header-page__container-fluid align-items-end js-opacity">
+			<div class="row no-gutters">
+				<div class="col-md-12 col-lg-6">
+					<div class="tail header-page__description">Transforming Your Ideas into Cutting-Edge AI Solutions for Business Success</div>
+				</div>
+				<div class="col-md-12 col-lg-6 text-lg-right">
+					<a class="btn-link btn-link--circle-right" href="!#start">LEARN MORE<i class="circle circle--white circle--right icon-down-open"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /Intro -->
 
 <!-- Process -->
 <article id="start" class="caption-single container">

@@ -123,6 +123,20 @@ html.is-scroll-disabled body {
   overflow-x: hidden;
 }
 
+a.white {
+  border: 1px solid #F5F5F5;
+  background-color: transparent;
+  color: #F5F5F5;
+  padding: 15px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .25s ease-in;
+}
+
+a.white:hover {
+  background-color: #FFFFFF;
+  color: #333333;
+}
 /* -----------------------------------------------------------------
     - Typography
 ----------------------------------------------------------------- */
@@ -1592,6 +1606,32 @@ li:nth-child(4) .menu-list__item span {
 /* -----------------------------------------------------------------
     - Hero
 ----------------------------------------------------------------- */
+
+/*For home page header */
+.home-header-title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 30%;
+  z-index: 2;
+}
+
+.home-header-title h1,
+.home-header-title h2 {
+  font-family: 'Raleway light';
+}
+
+.home-header-title h1 {
+  margin-bottom: 20px;
+  font-size: 46px;
+}
+
+.home-header-title h2 {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
 .hero {
   height: 100vh;
   position: relative;
