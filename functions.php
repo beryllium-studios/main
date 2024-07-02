@@ -51,7 +51,7 @@ function beryllium_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-primary' => esc_html__( 'Primary', 'beryllium' ),
+			'beryllium-menu' => esc_html__( 'Primary', 'beryllium' ),
 		)
 	);
 
@@ -71,25 +71,8 @@ function beryllium_setup() {
 			'script',
 		)
 	);
-
-	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
-
-	/**
-	 * Add support for core custom logo.
-	 *
-	 * @link https://codex.wordpress.org/Theme_Logo
-	 */
-	add_theme_support(
-		'custom-logo',
-		array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		)
-	);
 }
+
 add_action( 'after_setup_theme', 'beryllium_setup' );
 
 /**
@@ -99,13 +82,30 @@ function beryllium_scripts() {
 	wp_enqueue_style( 'beryllium-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'beryllium-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'beryllium-jquery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'beryllium-plugins', get_template_directory_uri() . '/js/plugins.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'beryllium-common', get_template_directory_uri() . '/js/common.js', array(), _S_VERSION, true );
+	wp_enqueue_style('beryllium-style-vendor-line', get_template_directory_uri() . '/styles/vendor/LineIcons.min.css' , array(), _S_VERSION);
+	wp_enqueue_style('beryllium-style-vendor-rev', get_template_directory_uri() . '/styles/vendor/revolution-settings.min.css' , array(), _S_VERSION);
+	wp_enqueue_style('beryllium-style-vendor-fancybox', get_template_directory_uri() . '/styles/vendor/jquery.fancybox.min.css' , array(), _S_VERSION);
+	wp_enqueue_style('beryllium-style-vendor-owl', get_template_directory_uri() . '/styles/vendor/owl.carousel.min.css' , array(), _S_VERSION);
+	wp_enqueue_style('beryllium-style-vendor-cube', get_template_directory_uri() . '/styles/vendor/cubeportfolio.min.css' , array(), _S_VERSION);
+	wp_enqueue_style('beryllium-style-vendor-wow', get_template_directory_uri() . '/styles/vendor/wow.css' , array(), _S_VERSION);
+	wp_enqueue_style('beryllium-style-vendor-bundle', get_template_directory_uri() . '/styles/vendor/bundle.min.css' , array(), _S_VERSION);
+	wp_enqueue_style('beryllium-slick', get_template_directory_uri() . '/styles/slick.css' , array(), _S_VERSION);
+	wp_enqueue_style('beryllium-slick-theme', get_template_directory_uri() . '/styles/slick-theme.css' , array(), _S_VERSION);
+	wp_enqueue_style('beryllium-style-main', get_template_directory_uri() . '/styles/style.css' , array(), _S_VERSION);
 
 
-	wp_enqueue_style('beryllium-style-main', get_template_directory_uri() . '/assets/styles/style.css' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-vendor-bundle-js', get_template_directory_uri() . '/js/vendor/bundle.min.js' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-vendor-contact', get_template_directory_uri() . '/js/vendor/contact_us.js' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-vendor-appear', get_template_directory_uri() . '/js/vendor/jquery.appear.js' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-vendor-cube-js', get_template_directory_uri() . '/js/vendor/jquery.cubeportfolio.min.js' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-vendor-fancy-js', get_template_directory_uri() . '/js/vendor/jquery.fancybox.min.js' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-vendor-owl-js', get_template_directory_uri() . '/js/vendor/owl.carousel.min.js' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-vendor-parallaxie', get_template_directory_uri() . '/js/vendor/parallaxie.min.js' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-vendor-wow-js', get_template_directory_uri() . '/js/vendor/wow.min.js' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-slick-js', get_template_directory_uri() . '/js/slick.min.js' , array(), _S_VERSION);
+	wp_enqueue_script('beryllium-script-js', get_template_directory_uri() . '/js/script.js' , array(), _S_VERSION);
 
+	// Loads google fonts for our use
 	wp_enqueue_style( 'add_google_fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap', false );
 }
 

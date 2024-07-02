@@ -1,16 +1,19 @@
-<?php
-/**
- * This component is used to show a preloader when showing a user a page
- * @package beryllium
- */
-
-
-if (!is_user_logged_in()) { ?>
-	<!-- Preloader -->
-	<div class="preloader">
-		<div class="preloader__wrap">
-			<img class="preloader__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/icon-white.svg" alt="Beryllium">
-			<div class="preloader__progress"><span></span></div>
+<!--start loader-->
+<div class="loader center-block">
+	<div class="spinner">
+		<div class="spinner-container container1">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
 		</div>
+		<div class="spinner-container container2">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+
 	</div>
-<?php } ?>
+</div>
+<!--loader end-->
