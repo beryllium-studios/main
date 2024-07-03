@@ -14,6 +14,8 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -114,3 +116,20 @@ add_action( 'wp_enqueue_scripts', 'beryllium_scripts', 0 );
 function echoV($e) {
 	print "session: <br><pre>".print_r($e, true)."</pre><BR>";
 }
+
+function get_base_url($path = '/') {
+	// Check if request is using HTTPS otherwise use HTTP
+	$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+	
+	// Get the domain name
+	$domainName = $_SERVER['HTTP_HOST'];
+
+	// Build the base URL
+	$baseUrl = $protocol . $domainName;
+
+  // Append the custom URL path to the base URL
+  $baseUrl .= $path;
+
+	return $baseUrl;
+}
+

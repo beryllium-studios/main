@@ -44,6 +44,9 @@
 								<li class="nav-item">
 									<a class="nav-link wow fadeInDown scroll" href="#contact-sec">CONTACT</a>
 								</li>
+								<li class="nav-item">
+									<a class="nav-link wow fadeInDown" href="<?php echo get_base_url('/careers'); ?>">CAREERS</a>
+								</li>
 							</ul>
 						</div>
 					</nav>
@@ -79,6 +82,9 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link scroll" href="#contact-sec">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="href="<?php echo get_base_url('/careers'); ?>">Careers</a>
 					</li>
 				</ul>
 			</nav>
