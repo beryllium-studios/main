@@ -27,7 +27,7 @@
 						<div class="collapse navbar-collapse" id="navbarNavDropdown">
 							<ul class="navbar-nav ml-auto">
 								<li class="nav-item active">
-									<a class="nav-link wow fadeInUp scroll" href="#home">HOME</a>
+									<a class="nav-link wow fadeInUp" href="<?php echo get_base_url(); ?>">HOME</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link wow fadeInDown scroll1" href="#about-sec">ABOUT</a>
@@ -66,7 +66,7 @@
 			<nav class="side-nav w-100">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link scroll" href="#home">Home</a>
+						<a class="nav-link" href="<?php echo get_base_url(); ?>">Home</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link scroll1" href="#about-sec">About</a>
