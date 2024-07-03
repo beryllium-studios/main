@@ -1,3 +1,12 @@
+<?php
+// Get the current page URL
+$currentUrl = $_SERVER['REQUEST_URI'];
+
+// Check if the current page is the home page or the careers page
+$isHomePage = ($currentUrl === '/' || $currentUrl === '/index.php');
+$isCareersPage = (strpos($currentUrl, '/careers') !== false);
+?>
+
 <header id="home">
 	<div class="container">
 		<div class="upper-nav">
@@ -29,23 +38,26 @@
 								<li class="nav-item active">
 									<a class="nav-link wow fadeInUp" href="<?php echo get_base_url(); ?>">HOME</a>
 								</li>
+								<!-- Remove li from condition if the link is not scrollable -->
+								<?php if (!$isCareersPage) { ?>
+									<li class="nav-item">
+										<a class="nav-link wow fadeInDown scroll1" href="#about-sec">ABOUT</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link wow fadeInUp scroll" href="#company-portfolio-section">PORTFOLIO</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link wow fadeInDown scroll" href="#testimonial-sec">CLIENTS</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link wow fadeInUp scroll" href="#lastest-blog">BLOG</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link wow fadeInDown scroll" href="#contact-sec">CONTACT</a>
+									</li>
+            		<?php } ?>
 								<li class="nav-item">
-									<a class="nav-link wow fadeInDown scroll1" href="#about-sec">ABOUT</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link wow fadeInUp scroll" href="#company-portfolio-section">PORTFOLIO</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link wow fadeInDown scroll" href="#testimonial-sec">CLIENTS</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link wow fadeInUp scroll" href="#lastest-blog">BLOG</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link wow fadeInDown scroll" href="#contact-sec">CONTACT</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link wow fadeInDown" href="<?php echo get_base_url('/careers'); ?>">CAREERS</a>
+									<a class="nav-link wow" href="<?php echo get_base_url('/careers'); ?>">CAREERS</a>
 								</li>
 							</ul>
 						</div>
@@ -66,26 +78,28 @@
 			<nav class="side-nav w-100">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo get_base_url(); ?>">Home</a>
+							<a class="nav-link" href="<?php echo get_base_url(); ?>">Home</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link scroll1" href="#about-sec">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link scroll" href="#company-portfolio-section">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link scroll" href="#testimonial-sec">Clients</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link scroll" href="#lastest-blog">Blogs</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link scroll" href="#contact-sec">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="href="<?php echo get_base_url('/careers'); ?>">Careers</a>
-					</li>
+					<?php if (!$isCareersPage) { ?>
+						<li class="nav-item">
+							<a class="nav-link scroll1" href="#about-sec">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#company-portfolio-section">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#testimonial-sec">Clients</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#lastest-blog">Blogs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#contact-sec">Contact</a>
+						</li>
+						<?php } ?>
+						<li class="nav-item">
+							<a class="nav-link" href="<?php echo get_base_url('/careers'); ?>">Careers</a>
+						</li>
 				</ul>
 			</nav>
 
