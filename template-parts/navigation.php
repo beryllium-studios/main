@@ -13,7 +13,7 @@ $isCareersPage = (strpos($currentUrl, '/careers') !== false);
 			<div class="row">
 				<div class="col-6 d-flex align-items-center">
 					<div class="contact-info">
-						<span><i class="lni lni-whatsapp"></i> +1 631 123 4567</span>
+						<span><i class="lni lni-whatsapp"></i> <a href="tel:3239891450">(323) 989-1450</a></span>
 					</div>
 				</div>
 				<div class="col-6">

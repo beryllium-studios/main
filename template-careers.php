@@ -56,9 +56,9 @@ include 'template-parts/navigation.php';
 
 	<!--About Star-->
 	<section class="about-sec" id="about-sec">
-		<svg id="about-header-svg" class="separator__svg" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#e8d716" version="1.1" xmlns="http://www.w3.org/2000/svg">
+		<svg id="about-header-svg" class="separator__svg" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#76A6B7" version="1.1" xmlns="http://www.w3.org/2000/svg">
 			<path d="M 100 100 V 10 L 0 100"/>
-			<path d="M 30 73 L 100 18 V 10 Z" fill="#e8d716" stroke-width="0"/>
+			<path d="M 30 73 L 100 18 V 10 Z" fill="#76A6B7" stroke-width="0"/>
 		</svg>
 		<div class="container">
 			<div class="row careers-join-row">
