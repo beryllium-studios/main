@@ -753,7 +753,7 @@ header{
     background-image: url("../assets/images/bes-hero-image.jpg");
     width: 100%;
     background-size:cover;
-    background-position: center;
+    background-position: center !important;
     background-repeat: no-repeat;
     z-index: 111;
 }
@@ -858,8 +858,8 @@ header{
     background-color: #76A6B7;
     position: relative;
     overflow: visible;
-    padding-top: 175px;
-    padding-bottom: 175px;
+    /*padding-top: 175px;*/
+    /*padding-bottom: 175px;*/
     text-align: center;
 }
 
@@ -874,7 +874,7 @@ header{
 }
 
 .service-details{
-    transform: translateY(-132px);
+    /*transform: translateY(-132px);*/
     /*transition: .8s ease all;*/
 }
 
