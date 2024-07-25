@@ -851,8 +851,8 @@ header{
     background-color: #76A6B7;
     position: relative;
     overflow: visible;
-    padding-top: 175px;
-    padding-bottom: 175px;
+    /*padding-top: 175px;*/
+    /*padding-bottom: 175px;*/
     text-align: center;
 }
 
