@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg-12 text-center text-lg-right">
-				<h1 class="services-section-header">Services</h1>
+				<h1 class="services-section-header">Our Services</h1>
 				<div class="skill-details">
 
 					<div class="row no-gutters services-area">
@@ -12,8 +12,8 @@
 								<div class="icon-holder">
 									<i class="lni lni-briefcase"></i>
 								</div>
-								<h4 class="card-heading">Make Business</h4>
-								<p>Your success is our mission. We provide the tools to streamline and grow your business effortlessly.</p>
+								<h4 class="card-heading">AI Integration</h4>
+								<p class="service-p">Enhance your business with tailored AI solutions for efficiency and growth.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-4 services text-center">
@@ -21,8 +21,8 @@
 								<div class="icon-holder">
 									<i class="lni lni-bulb"></i>
 								</div>
-								<h4 class="card-heading">Innovative Ideas</h4>
-								<p>Fuel your business with our cutting-edge solutions and innovative strategies.</p>
+								<h4 class="card-heading">Web Development</h4>
+								<p class="service-p">Craft responsive, user-friendly websites to boost your online presence.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-4 services text-center">
@@ -30,8 +30,8 @@
 								<div class="icon-holder">
 									<i class="lni lni-heart"></i>
 								</div>
-								<h4 class="card-heading">Our Hardwork</h4>
-								<p>We are dedicated to delivering reliable, high-quality solutions tailored to your needs.</p>
+								<h4 class="card-heading">Automation Solutions</h4>
+								<p class="service-p">Streamline operations with tools that minimize manual tasks and maximize productivity.</p>
 							</div>
 						</div>
 					</div>

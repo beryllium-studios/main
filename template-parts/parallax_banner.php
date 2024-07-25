@@ -12,8 +12,10 @@
 					<div class="overlay-yellow-box"></div>
 					<div class="banner-right-area-content">
 						<h2>Transformative Tech Solutions</h2>
-						<p>Discover innovative, easy-to-implement tech solutions designed to help your business grow and evolve. Let us simplify your technology journey with
-							reliable, affordable services tailored to your needs.</p>
+						<p>Discover innovative tech solutions to help your business grow and evolve. Simplify your tech journey with our reliable, affordable services.
+                            <br>
+                            <br>
+                            Ready to see how we can boost your business? Take our Freebie Quizzes to find where you currently levels are. Click below to start!</p>
 						<a href="javascript:void(0);" class="btn btn-large btn-rounded white-tran-black-btn">Learn More</a>
 					</div>
 				</div>
