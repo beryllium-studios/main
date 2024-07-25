@@ -107,28 +107,6 @@ jQuery(function ($) {
         new WOW().init();
     }
 
-
-/* ===================================
-     Mouse parallax
-====================================== */
-
-    if($(window).width() > 991) {
-
-
-        $('.banner,header').mousemove(function (e) {
-            $('[data-depth]').each(function () {
-                var depth = $(this).data('depth');
-                var amountMovedX = (e.pageX * -depth / 4);
-                var amountMovedY = (e.pageY * -depth / 4);
-
-                $(this).css({
-                    'transform': 'translate3d(' + amountMovedX + 'px,' + amountMovedY + 'px, 0)',
-                });
-            });
-        });
-
-    }
-
 /* ===================================
     Skill Section Bars
 ====================================== */

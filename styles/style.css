@@ -1,4 +1,4 @@
-/* ===================================
+ /* ===================================
     About
 ====================================== */
 
@@ -43,11 +43,11 @@
 ====================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 
 
 .main-font{font-family: 'Roboto', sans-serif;}
-.alt-font{font-family: 'Oswald', sans-serif;}
+.alt-font{font-family: 'Raleway', sans-serif;}
 
 
 /* ===================================
@@ -55,7 +55,7 @@
 ====================================== */
 
 body {font-family: 'Roboto', sans-serif; font-size: 16px;color: #2b2b2b;font-weight:300;line-height:25px;width: 100%; overflow-x: hidden}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {line-height: 1.2; font-weight: 400; font-family: 'Oswald', sans-serif;text-transform:uppercase!important;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {line-height: 1.2; font-weight: 400; font-family: 'Raleway', sans-serif;text-transform:uppercase!important;}
 .h1, h1 {
     font-size: 3rem;
 }
@@ -130,12 +130,12 @@ section{padding: 7.5rem 0;}
 .white-blue-btn:hover{color: #ffffff; ;background-color:#02aeb3 !important; border: 1px solid transparent;}
 
 .white-tran-yellow-btn{font-size: 12px;font-family: 'Roboto', sans-serif;padding: 10px 30px;color:#ffffff !important;font-weight: 600;background-color:transparent;border:1px solid #ffffff !important;border-radius: 0px;-webkit-transition: .8s ease !important;-o-transition: .8s ease !important;transition: .8s ease !important; cursor: pointer}
-.white-tran-yellow-btn:hover{color: #202020 !important; ;background-color:#e8d716 !important; border: 1px solid transparent !important;}
+.white-tran-yellow-btn:hover{color: #202020 !important; ;background-color:#76A6B7 !important; border: 1px solid transparent !important;}
 
 .blue-and-black-btn{font-size: 12px;font-family: 'Roboto', sans-serif;padding: 7px 35px;;color:#ffffff;;font-weight: 600;background-color:#5bbdbb;border:1px solid transparent;border-radius: 0px;-webkit-transition: .8s ease !important;-o-transition: .8s ease !important;transition: .8s ease !important; cursor: pointer}
 .blue-and-black-btn:hover{color: #ffffff !important; ;background-color:#202020 !important; border: 1px solid transparent;}
 
-.yellow-and-black-btn{font-size: 12px;font-family: 'Roboto', sans-serif;padding: 7px 35px;;color:#ffffff;;font-weight: 600;background-color:#e8d716;border:1px solid transparent;border-radius: 0px;-webkit-transition: .8s ease !important;-o-transition: .8s ease !important;transition: .8s ease !important; cursor: pointer}
+.yellow-and-black-btn{font-size: 12px;font-family: 'Roboto', sans-serif;padding: 7px 35px;;color:#ffffff;;font-weight: 600;background-color:#76A6B7;border:1px solid transparent;border-radius: 0px;-webkit-transition: .8s ease !important;-o-transition: .8s ease !important;transition: .8s ease !important; cursor: pointer}
 .yellow-and-black-btn:hover{color: #ffffff !important; ;background-color:#202020 !important; border: 1px solid transparent;}
 
 
@@ -143,7 +143,7 @@ section{padding: 7.5rem 0;}
 .bg-main{background: #02aeb3;}
 .bg-black{background: #202020;}
 .bg-black-light{background: #2b2b2b;}
-.bg-dark {background-color: #1d1d21 !important;}
+.bg-dark {background-color: #76A6B7 !important;}
 .bg-blue {background-color: #02aeb3;}
 .bg-pink {background-color: #f033b5;}
 .bg-purple {background-color: #9556f5;}
@@ -305,9 +305,13 @@ header{
 }
 
 .contact-info span{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: #ffffff;
+}
+
+.contact-info * {
+ color: #333333;
 }
 
 .contact-social-icons .upper-social-icons{
@@ -330,7 +334,7 @@ header{
     border-radius: 50%;
     position: relative;
     display: inline-block;
-    color: #ffffff;
+    color: #333333;
 }
 
 .contact-social-icons .upper-social-icons li a i{
@@ -376,11 +380,12 @@ header{
 }
 
 .navbar .navbar-brand img{
-    max-width: 70px;
+    max-width: 25px;
+    width: 100%;
 }
 
 .navbar-nav{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
@@ -538,7 +543,7 @@ header{
 
 .sidemenu_btn i{
     font-size: 30px;
-    color: #ffffff;
+    color: #333333;
 }
 
 .side-menu .inner-wrapper {
@@ -743,7 +748,7 @@ header{
 ====================================== */
 
 .banner{
-    background-image: url("../img/banner1.jpg");
+    background-image: url("../assets/images/brand-art-ai-large.jpg");
     width: 100%;
     background-size:cover;
     background-position: center;
@@ -757,8 +762,8 @@ header{
 }
 
 .banner-text-left h1{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     font-size:60px;
     margin-top: -55px;
 }
@@ -777,7 +782,7 @@ header{
     right: 0;
     top: 0;
     bottom: 0;
-    background-color:#dbd527;
+    background-color:#76A6B7;
 }
 
 .banner-text-right{
@@ -792,24 +797,33 @@ header{
     z-index: 11;
     color: #ffffff;
 }
+
+.banner-right-area-content a {
+    width: 50%;
+    margin-left: 20px;
+}
+
 .banner-right-area-content h2{
-    font-size: 60px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    margin-bottom: 20px;
-    text-transform:initial !important;
+    font-size: 52px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: initial !important;
+    padding: 0 20px;
 }
 
 .banner-right-area-content h2 .main-bold-text{
     display: block;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     letter-spacing: 1.6px;
 }
 
 .banner-right-area-content p{
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 42px;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
 }
 
 
@@ -827,13 +841,17 @@ header{
 /* ===================================
    Services
 ====================================== */
+ .mobile-phone-art-element {
+     max-width: 325px;
+ }
+
 .about-sec{
-    background-color:#e8d716;
+    background-color: #76A6B7;
     position: relative;
     overflow: visible;
-    margin-top: 120px;
-    padding-top: 120px;
-    padding-bottom: 200px;
+    /*padding-top: 175px;*/
+    /*padding-bottom: 175px;*/
+    text-align: center;
 }
 
 #about-header-svg{
@@ -847,12 +865,12 @@ header{
 }
 
 .service-details{
-    transform: translateY(-132px);
+    /*transform: translateY(-132px);*/
     /*transition: .8s ease all;*/
 }
 
 .service-details h1{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     color: #ffffff;
 }
@@ -861,14 +879,37 @@ header{
 }
 
 .service-details p{
-    width: 70%;
+    width: 80%;
     color: #ffffff;
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    font-size: 24px;
+    line-height: 42px;
 }
 .service-details a{
     margin-top: 60px !important;
 }
+
+ .about-details h1{
+     font-family: 'Raleway', sans-serif;
+     font-weight: 600;
+     color: #ffffff;
+ }
+ .about-details h1 span{
+     color: #202020;
+ }
+
+ .about-details p{
+     width: 80%;
+     color: #ffffff;
+     margin: 50px auto 0 auto;
+     text-align: center;
+     font-size: 24px;
+     line-height: 42px;
+ }
+ .about-details a{
+     margin-top: 60px !important;
+ }
 
 .careers-join-row {
     margin-top: 20px;
@@ -912,7 +953,7 @@ header{
 .about-sec .services-area .services .service-card .card-heading{
     color: #32301f;
     font-size: 28px;
-    font-family: Oswald, sans-serif;
+    font-family: Raleway, sans-serif;
     transition: .5s ease;
     font-weight: 300;
     text-transform: initial !important;
@@ -941,7 +982,7 @@ header{
 
 .skill-sec .skill-details .title{
     color: #2b2b2b;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 60px;
     font-weight: 500;
     margin-bottom: 30px;
@@ -958,7 +999,7 @@ header{
     padding-top: 60px;
 }
 .skill-sec .skill-bars .progress-item .progress-bar{
-    background-color: #dbd527 !important;
+    background-color: #76A6B7 !important;
     position: relative;
 
 }
@@ -1017,8 +1058,8 @@ header{
    Team SECTION
 ====================================== */
 .team-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 175px;
+    padding-bottom: 175px;
     background-color:#202020;
 }
 
@@ -1051,7 +1092,7 @@ header{
 
 .team-section .team-details .title{
     color: #ffffff;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 60px;
     font-weight: 500;
     margin-bottom: 30px;
@@ -1066,13 +1107,13 @@ header{
 }
 
 .team-section .image-holder:hover ~.team-name{
-    color:#e8d716;
+    color:#76A6B7;
 }
 
 .team-section .image-holder img{
     height: 250px;
     width: 250px;
-    background-color: #e8d716;
+    background-color: #76A6B7;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -1187,9 +1228,9 @@ header{
 }
 
 .portfolio-sec .cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
-    color: #e8d716;
+    color: #76A6B7;
     background: transparent;
-    border-bottom: solid 3px #e8d716;
+    border-bottom: solid 3px #76A6B7;
 
 }
 .portfolio-sec .cbp-l-filters-button .cbp-filter-item,
@@ -1202,12 +1243,12 @@ header{
     margin-top: -190px;
 }
 .portfolio-sec .cbp-l-grid-mosaic .cbp-caption-activeWrap {
-    background: rgba(232, 215, 22, 0.8);
+    background: rgba(118, 166, 183, 0.8);
 }
 
 .portfolio-sec .cbp-l-filters-button .cbp-filter-item:hover {
     color: #202020;
-    border-color:#e8d716;
+    border-color:#76A6B7;
 }
 
 .portfolio-sec .cbp-l-caption-title {
@@ -1307,7 +1348,7 @@ header{
 .testimonial-sec{
     padding-top: 150px;
     padding-bottom: 180px;
-    background-color:#e8d716;
+    background-color:#76A6B7;
 }
 
 #testimonial-header-svg{
@@ -1329,7 +1370,7 @@ header{
 }
 
 .testimonial-sec .testimonial-title .heading{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: #202020;
     font-size: 50px;
@@ -1441,13 +1482,13 @@ header{
 .lastest-blog .blog-content h1{
     font-size: 60px;
     color: #ffffff;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
 .lastest-blog .blog-content h1 span{
     font-size: 60px;
-    color: #e8d716;
+    color: #76A6B7;
 }
 
 .lastest-blog .blog-content p{
@@ -1740,11 +1781,11 @@ header{
     padding-right: 30px;
 }
 .standalone-detail .sub-heading{
-    color: #e8d716;
+    color: #76A6B7;
     margin-bottom: 10px;
 }
 .standalone-area .sub-heading{
-    color: #e8d716;
+    color: #76A6B7;
     margin-bottom: 8px;
 }
 .standalone-detail .heading{
@@ -1752,7 +1793,7 @@ header{
     font-size: 50px;
     color: #202020;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .standalone-detail .para_text{
@@ -1770,7 +1811,7 @@ header{
 .standalone-area .gradient-text1{
     font-weight: bold;
     margin-bottom: 12px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 45px;
 }
 .standalone-area .stand-img-des .para_text{
@@ -1955,7 +1996,7 @@ header{
 .container1 > div, .container2 > div, .container3 > div {
     width: 16px;
     height: 16px;
-    border: 5px solid #dbd527;
+    border: 5px solid #76A6B7;
     background-color: #fff;
 
     border-radius: 100%;
@@ -2308,6 +2349,17 @@ header{
     }
 
     .service-details p {
+        width: 100%;
+    }
+    .about-details {
+        transform: translateY(0px);
+        margin-bottom: 80px;
+    }
+    .about-details h1 {
+        font-size: 60px;
+    }
+
+    .about-details p {
         width: 100%;
     }
     #banner_svg {
@@ -2912,5 +2964,20 @@ header{
     }
 }
 
+/*Features */
 
+ .skill-details {
+     display: flex;
+     justify-content: center;
+ }
 
+.icon-holder {
+    font-size: 75px;
+    padding: 15px;
+}
+
+ .service-card p {
+     font-size: 24px;
+     line-height: 42px;
+     padding: 15px;
+ }
