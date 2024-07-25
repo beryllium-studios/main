@@ -399,8 +399,10 @@ header{
 .navbar-nav .nav-item:last-child{
     margin-right:15px;
 }
-
-.navbar-nav .nav-item .nav-link{
+ .nav-link {
+     text-transform: uppercase;
+ }
+.navbar-nav .nav-item {
     color: #202020;
 }
 
@@ -488,7 +490,7 @@ header{
     margin-bottom: 50px;
 }
 .side-menu .navbar-brand img{
-    width: 60%;
+    width: 25%;
     margin: auto;
     display: block;
 }
@@ -748,7 +750,7 @@ header{
 ====================================== */
 
 .banner{
-    background-image: url("../assets/images/brand-art-ai-large.jpg");
+    background-image: url("../assets/images/bes-hero-image.jpg");
     width: 100%;
     background-size:cover;
     background-position: center;
@@ -849,8 +851,8 @@ header{
     background-color: #76A6B7;
     position: relative;
     overflow: visible;
-    /*padding-top: 175px;*/
-    /*padding-bottom: 175px;*/
+    padding-top: 175px;
+    padding-bottom: 175px;
     text-align: center;
 }
 
@@ -865,7 +867,7 @@ header{
 }
 
 .service-details{
-    /*transform: translateY(-132px);*/
+    transform: translateY(-132px);
     /*transition: .8s ease all;*/
 }
 
@@ -889,27 +891,6 @@ header{
 .service-details a{
     margin-top: 60px !important;
 }
-
- .about-details h1{
-     font-family: 'Raleway', sans-serif;
-     font-weight: 600;
-     color: #ffffff;
- }
- .about-details h1 span{
-     color: #202020;
- }
-
- .about-details p{
-     width: 80%;
-     color: #ffffff;
-     margin: 50px auto 0 auto;
-     text-align: center;
-     font-size: 24px;
-     line-height: 42px;
- }
- .about-details a{
-     margin-top: 60px !important;
- }
 
 .careers-join-row {
     margin-top: 20px;
@@ -2349,17 +2330,6 @@ header{
     }
 
     .service-details p {
-        width: 100%;
-    }
-    .about-details {
-        transform: translateY(0px);
-        margin-bottom: 80px;
-    }
-    .about-details h1 {
-        font-size: 60px;
-    }
-
-    .about-details p {
         width: 100%;
     }
     #banner_svg {
