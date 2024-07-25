@@ -843,6 +843,13 @@ header{
 /* ===================================
    Services
 ====================================== */
+
+ .services-section-header {
+     text-align: center;
+     margin: 0 auto 60px auto;
+     font-weight: 700;
+ }
+
  .mobile-phone-art-element {
      max-width: 325px;
  }
