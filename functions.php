@@ -8,6 +8,8 @@
  */
 
 require 'inc/custom_post_types.php';
+require 'inc/WP_Custom_Nav_Walker.php';
+require 'inc/custom_filters.php';
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.

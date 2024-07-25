@@ -399,8 +399,10 @@ header{
 .navbar-nav .nav-item:last-child{
     margin-right:15px;
 }
-
-.navbar-nav .nav-item .nav-link{
+ .nav-link {
+     text-transform: uppercase;
+ }
+.navbar-nav .nav-item {
     color: #202020;
 }
 
@@ -488,7 +490,7 @@ header{
     margin-bottom: 50px;
 }
 .side-menu .navbar-brand img{
-    width: 60%;
+    width: 25%;
     margin: auto;
     display: block;
 }
