@@ -753,7 +753,7 @@ header{
     background-image: url("../assets/images/bes-hero-image.jpg");
     width: 100%;
     background-size:cover;
-    background-position: center;
+    background-position: center !important;
     background-repeat: no-repeat;
     z-index: 111;
 }
@@ -851,8 +851,8 @@ header{
     background-color: #76A6B7;
     position: relative;
     overflow: visible;
-    padding-top: 175px;
-    padding-bottom: 175px;
+    /*padding-top: 175px;*/
+    /*padding-bottom: 175px;*/
     text-align: center;
 }
 
@@ -865,9 +865,27 @@ header{
     z-index: 11;
     height: 200px;
 }
+ .service-sec{
+     background-color: #76A6B7;
+     position: relative;
+     overflow: visible;
+     padding-top: 175px;
+     padding-bottom: 175px;
+     text-align: center;
+ }
+
+ #service-header-svg{
+     position:absolute;
+     left:0;
+     right:0;
+     top:-200px;
+     transform: rotateY(-180deg);
+     z-index: 11;
+     height: 200px;
+ }
 
 .service-details{
-    transform: translateY(-132px);
+    /*transform: translateY(-132px);*/
     /*transition: .8s ease all;*/
 }
 
@@ -888,9 +906,35 @@ header{
     font-size: 24px;
     line-height: 42px;
 }
-.service-details a{
+
+ .about-details{
+     /*transform: translateY(-132px);*/
+     /*transition: .8s ease all;*/
+ }
+.about-details a{
     margin-top: 60px !important;
 }
+
+ .about-details h1{
+     font-family: 'Raleway', sans-serif;
+     font-weight: 600;
+     color: #ffffff;
+ }
+ .about-details h1 span{
+     color: #202020;
+ }
+
+ .about-details p{
+     width: 80%;
+     color: #ffffff;
+     margin: 50px auto 0 auto;
+     text-align: center;
+     font-size: 24px;
+     line-height: 42px;
+ }
+ .about-details a{
+     margin-top: 60px !important;
+ }
 
 .careers-join-row {
     margin-top: 20px;
@@ -899,7 +943,6 @@ header{
     margin-top: 20px;
     color: #333;
 }
-
 
 .about-sec .services-area .services{
     display: flex;
@@ -947,6 +990,53 @@ header{
     transform: rotate(-6deg);
     bottom: -100px;
 }
+
+ .service-sec .services-area .services{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+ }
+ .service-sec .services-area .services .service-card{
+     margin-bottom: 80px;
+ }
+ .service-sec .services-area .services:last-child .service-card,.about-sec .services-area .services:nth-child(3) .service-card{
+     margin-bottom: 0;
+ }
+
+ .service-sec .services-area .services:nth-child(3),.about-sec .services-area .services:nth-child(4){
+     transform: translateX(150px);
+ }
+
+ .service-sec .services-area .services .service-card .icon-holder{
+     margin-bottom: 12px;
+     transition: .5s ease;
+ }
+ .service-sec .services-area .services .service-card .icon-holder i{
+     color: #FFFFFF;
+     font-size: 120px;
+ }
+ .service-sec .services-area .services:hover .service-card .icon-holder{
+     animation: .8s pulse infinite;
+     /*transform: translateY(-10px);*/
+ }
+
+ .service-sec .services-area .services .service-card .card-heading{
+     color: #32301f;
+     font-size: 28px;
+     font-family: Raleway, sans-serif;
+     transition: .5s ease;
+     font-weight: 300;
+     text-transform: initial !important;
+ }
+
+ .service-sec img{
+     position: absolute;
+     z-index: 1111;
+     left: 300px;
+     transform: rotate(-6deg);
+     bottom: -100px;
+ }
 
 /* ===================================
    Skill Section

@@ -3,7 +3,7 @@
 		<div class="row">
 			<!-- Heading Area-->
 			<div class="col-lg-12 wow fadeInUp">
-				<div class="service-details">
+				<div class="about-details">
 					<h1>We Are</h1>
 					<h1><span>BERYLLIUM</span> STUDIOS</h1>
 					<p>At Beryllium Studios, we specialize in making technology simple, effortless, and evolving. Our mission is to empower small and medium-sized businesses by
