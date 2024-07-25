@@ -1,9 +1,5 @@
 <!--testimonial section start-->
 <section class="testimonial-sec padding-top position-relative" id="testimonial-sec">
-	<svg class="separator__svg" id="testimonial-header-svg" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#fff" version="1.1" xmlns="http://www.w3.org/2000/svg">
-		<path d="M 100 100 V 10 L 0 100"/>
-		<path d="M 30 73 L 100 18 V 10 Z" fill="#fff" stroke-width="0"/>
-	</svg>
 	<div class="container">
 		<div class="testimonial-area">
 			<div class="row">
@@ -47,9 +43,5 @@
 			</div>
 		</div>
 	</div>
-	<svg class="separator__svg" id="testimonial-foot-svg" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#fff" version="1.1" xmlns="http://www.w3.org/2000/svg">
-		<path d="M 100 100 V 10 L 0 100"/>
-		<path d="M 30 73 L 100 18 V 10 Z" fill="#fff" stroke-width="0"/>
-	</svg>
 </section>
 <!--testimonial section end-->

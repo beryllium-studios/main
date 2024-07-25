@@ -32,7 +32,7 @@ $isCareersPage = (strpos($currentUrl, '/careers') !== false);
 			<div class="row">
 				<div class="col-12">
 					<nav class="navbar navbar-expand-lg navbar-light">
-						<a class="navbar-brand bg-dark" href="index-digital-agency.html"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-white.png"></a>
+						<a class="navbar-brand bg-dark" href="index-digital-agency.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/icon-white.svg"></a>
 						<div class="collapse navbar-collapse" id="navbarNavDropdown">
 							<ul class="navbar-nav ml-auto">
 								<li class="nav-item active">
@@ -50,12 +50,9 @@ $isCareersPage = (strpos($currentUrl, '/careers') !== false);
 										<a class="nav-link wow fadeInDown scroll" href="#testimonial-sec">CLIENTS</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link wow fadeInUp scroll" href="#lastest-blog">BLOG</a>
-									</li>
-									<li class="nav-item">
 										<a class="nav-link wow fadeInDown scroll" href="#contact-sec">CONTACT</a>
 									</li>
-            		<?php } ?>
+            		            <?php } ?>
 								<li class="nav-item">
 									<a class="nav-link wow" href="<?php echo get_base_url('/careers'); ?>">CAREERS</a>
 								</li>

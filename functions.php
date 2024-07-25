@@ -58,9 +58,9 @@ function beryllium_setup() {
 	);
 
 	/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
+	* Switch default core markup for search form, comment form, and comments
+	* to output valid HTML5.
+	*/
 	add_theme_support(
 		'html5',
 		array(
@@ -119,7 +119,7 @@ function echoV($e) {
 
 function get_base_url($path = '/') {
 	// Check if request is using HTTPS otherwise use HTTP
-	$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+	$protocol = ( ( ! empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] !== 'off' ) || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 	
 	// Get the domain name
 	$domainName = $_SERVER['HTTP_HOST'];
@@ -132,4 +132,5 @@ function get_base_url($path = '/') {
 
 	return $baseUrl;
 }
+
 
