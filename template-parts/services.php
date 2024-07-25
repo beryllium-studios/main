@@ -1,9 +1,9 @@
-<section class="about-sec" id="about-sec">
+<section class="service-sec" id="service-sec">
     <div class="container">
         <div class="row">
             <!-- Heading Area-->
             <div class="col-lg-12 wow fadeInUp">
-                <div class="about-details">
+                <div class="service-details">
                     <h1>We Are</h1>
                     <h1><span>BERYLLIUM</span> STUDIOS</h1>
                     <p>At Beryllium Studios, we specialize in making technology simple, effortless, and evolving. Our mission is to empower small and medium-sized businesses by
@@ -13,5 +13,4 @@
             </div>
         </div>
     </div>
-`
 <!--About End-->
