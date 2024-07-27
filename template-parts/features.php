@@ -6,7 +6,7 @@
 				<div class="skill-details">
 					<div class="row no-gutters services-area">
 						<div class="col-12 col-md-6 services text-center">
-							<div class="service-card wow fadeInRight">
+							<div class="service-card wow fadeInRight"data-wow-delay=".25s">
 								<div class="icon-holder">
 									<i class="lni lni-briefcase"></i>
 								</div>
@@ -15,7 +15,7 @@
 							</div>
 						</div>
 						<div class="col-12 col-md-6 services text-center">
-							<div class="service-card wow fadeInRight">
+							<div class="service-card wow fadeInRight" data-wow-delay=".35s">
 								<div class="icon-holder">
 									<i class="lni lni-bulb"></i>
 								</div>
@@ -24,7 +24,7 @@
 							</div>
 						</div>
 						<div class="col-12 col-md-6 mt-5 services text-center">
-							<div class="service-card wow fadeInRight" data-wow-delay=".5s">
+							<div class="service-card wow fadeInRight" data-wow-delay=".45s">
 								<div class="icon-holder">
 									<i class="lni lni-heart"></i>
 								</div>
@@ -33,7 +33,7 @@
 							</div>
 						</div>
 						<div class="col-12 col-md-6 mt-5 services text-center">
-							<div class="service-card wow fadeInRight" data-wow-delay=".5s">
+							<div class="service-card wow fadeInRight" data-wow-delay=".55s">
 								<div class="icon-holder">
 									<i class="lni lni-wallet"></i>
 								</div>

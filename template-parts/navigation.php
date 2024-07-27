@@ -10,10 +10,7 @@
 				<div class="col-6">
 					<div class="contact-social-icons d-flex justify-content-end align-items-center">
 						<ul class="upper-social-icons">
-							<li><a href="#" class="facebook-text-hvr"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" class="twitter-text-hvr"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#" class="linkedin-text-hvr"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#" class="instagrams-text-hvr"><i class="lni lni-instagram-filled"></i></a></li>
+							<?php include 'navigation/social.php'; ?>
 						</ul>
 					</div>
 				</div>
@@ -66,11 +63,13 @@
 				?>
 			</nav>
 
-			<?php include 'navigation/social.php'; ?>
+			<div class="side-footer text-white w-100 d-flex justify-content-center">
+				<ul class="social-icons-simple">
+					<?php include 'navigation/social.php'; ?>
+				</ul>
+			</div>
 
 		</div>sss
 	</div>
 	<a id="close_side_menu" href="javascript:void(0);"></a>
-
-
 </header>

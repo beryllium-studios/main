@@ -8,29 +8,29 @@
 
 					<div class="row no-gutters services-area">
 						<div class="col-12 col-md-4 services text-center">
-							<div class="service-card wow fadeInRight">
+							<div class="service-card wow fadeInRight" data-wow-delay=".25s">
 								<div class="icon-holder">
-									<i class="lni lni-briefcase"></i>
+									<i class="lni lni-cloud"></i>
 								</div>
-								<h4 class="card-heading">Make Business</h4>
+								<h4 class="card-heading">AI Integration</h4>
 								<p>Your success is our mission. We provide the tools to streamline and grow your business effortlessly.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-4 services text-center">
-							<div class="service-card wow fadeInRight">
+							<div class="service-card wow fadeInRight" data-wow-delay=".35s">
 								<div class="icon-holder">
-									<i class="lni lni-bulb"></i>
+									<i class="lni lni-world"></i>
 								</div>
-								<h4 class="card-heading">Innovative Ideas</h4>
+								<h4 class="card-heading">Web Development</h4>
 								<p>Fuel your business with our cutting-edge solutions and innovative strategies.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-4 services text-center">
-							<div class="service-card wow fadeInRight" data-wow-delay=".5s">
+							<div class="service-card wow fadeInRight" data-wow-delay=".45s">
 								<div class="icon-holder">
-									<i class="lni lni-heart"></i>
+									<i class="lni lni-timer"></i>
 								</div>
-								<h4 class="card-heading">Our Hardwork</h4>
+								<h4 class="card-heading">Automation Solutions</h4>
 								<p>We are dedicated to delivering reliable, high-quality solutions tailored to your needs.</p>
 							</div>
 						</div>

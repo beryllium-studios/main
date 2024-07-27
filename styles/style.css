@@ -858,8 +858,6 @@ header{
     background-color: #76A6B7;
     position: relative;
     overflow: visible;
-    padding-top: 175px;
-    padding-bottom: 175px;
     text-align: center;
 }
 
@@ -871,11 +869,6 @@ header{
     transform: rotateY(-180deg);
     z-index: 11;
     height: 200px;
-}
-
-.service-details{
-    transform: translateY(-132px);
-    /*transition: .8s ease all;*/
 }
 
 .service-details h1{
@@ -1833,6 +1826,7 @@ header{
 }
 .fixed-nav-on-scroll .logo-fixed-scroll img{
     width: 100%;
+    max-width: 32px;
     margin: auto;
     display: inline-block;
 }

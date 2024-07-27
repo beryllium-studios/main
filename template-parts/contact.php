@@ -24,15 +24,14 @@
 				<div class="contact-details wow fadeInRight">
 					<h4 class="heading">OUR LOCATION</h4>
 					<p class="text">
-						There are many variations of passages of Lorem Ipsum available, but the majority have suffered .
+						We are a digital agency. We serve multiple businesses worldwide.
 					</p>
 					<ul>
-						<li><i aria-hidden="true" class="fas fa-map-marker-alt"></i> 123 Park Avenue, New York, United States </li>
+						<li><i aria-hidden="true" class="fas fa-map-marker-alt"></i> California, United States </li>
 						<li><i aria-hidden="true" class="fas fa-phone-volume"></i>
-							<span>+1 631 1234 5678</span>
-							<span>+1 631 1234 5678</span>
+							<a href="tel:13239891450">+1 (323) 989-1450</a>
 						</li>
-						<li><i aria-hidden="true" class="fas fa-paper-plane"></i>email@website.com</li>
+						<li><i aria-hidden="true" class="fas fa-paper-plane"></i><a href="mailto:hello@berylliumstudios.com">hello@berylliumstudios.com</a></li>
 					</ul>
 				</div>
 			</div>

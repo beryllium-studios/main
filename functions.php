@@ -108,6 +108,7 @@ function beryllium_scripts() {
 	wp_enqueue_script('beryllium-vendor-wow-js', get_template_directory_uri() . '/js/vendor/wow.min.js' , array(), _S_VERSION);
 	wp_enqueue_script('beryllium-slick-js', get_template_directory_uri() . '/js/slick.min.js' , array(), _S_VERSION);
 	wp_enqueue_script('beryllium-script-js', get_template_directory_uri() . '/js/script.js' , array(), _S_VERSION);
+	wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/3e706aa444.js' , array(), _S_VERSION);
 
 	// Loads google fonts for our use
 	wp_enqueue_style( 'add_google_fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap', false );

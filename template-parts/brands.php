@@ -7,7 +7,6 @@
 			<div class="logo-item"> <img alt="client-logo" src="<?php echo get_template_directory_uri(); ?>/img/client-2.png"></div>
 			<div class="logo-item"> <img alt="client-logo" src="<?php echo get_template_directory_uri(); ?>/img/client-3.png"></div>
 			<div class="logo-item"> <img alt="client-logo" src="<?php echo get_template_directory_uri(); ?>/img/client-4.png"></div>
-
 		</div>
 	</div>
 </section>
