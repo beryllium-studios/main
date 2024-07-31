@@ -124,3 +124,10 @@ add_action( 'wp_enqueue_scripts', 'beryllium_scripts', 0 );
 function echoV( $e ): void {
 	print "session: <br><pre>" . print_r( $e, true ) . "</pre><BR>";
 }
+
+function is_prod(): bool {
+	// Get the current site's URL
+	$site_url = get_site_url();
+
+	return str_contains( $site_url, 'www.berylliumstudios.com' );
+}
