@@ -18,7 +18,6 @@ if ( ! defined( '_S_VERSION' ) ) {
 }
 
 
-
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -26,7 +25,7 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function beryllium_setup() {
+function beryllium_setup(): void {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
@@ -83,33 +82,33 @@ add_action( 'after_setup_theme', 'beryllium_setup' );
 /**
  * Enqueue scripts and styles.
  */
-function beryllium_scripts() {
+function beryllium_scripts(): void {
 	wp_enqueue_style( 'beryllium-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'beryllium-style', 'rtl', 'replace' );
 
-	wp_enqueue_style('beryllium-style-vendor-line', get_template_directory_uri() . '/styles/vendor/LineIcons.min.css' , array(), _S_VERSION);
-	wp_enqueue_style('beryllium-style-vendor-rev', get_template_directory_uri() . '/styles/vendor/revolution-settings.min.css' , array(), _S_VERSION);
-	wp_enqueue_style('beryllium-style-vendor-fancybox', get_template_directory_uri() . '/styles/vendor/jquery.fancybox.min.css' , array(), _S_VERSION);
-	wp_enqueue_style('beryllium-style-vendor-owl', get_template_directory_uri() . '/styles/vendor/owl.carousel.min.css' , array(), _S_VERSION);
-	wp_enqueue_style('beryllium-style-vendor-cube', get_template_directory_uri() . '/styles/vendor/cubeportfolio.min.css' , array(), _S_VERSION);
-	wp_enqueue_style('beryllium-style-vendor-wow', get_template_directory_uri() . '/styles/vendor/wow.css' , array(), _S_VERSION);
-	wp_enqueue_style('beryllium-style-vendor-bundle', get_template_directory_uri() . '/styles/vendor/bundle.min.css' , array(), _S_VERSION);
-	wp_enqueue_style('beryllium-slick', get_template_directory_uri() . '/styles/slick.css' , array(), _S_VERSION);
-	wp_enqueue_style('beryllium-slick-theme', get_template_directory_uri() . '/styles/slick-theme.css' , array(), _S_VERSION);
-	wp_enqueue_style('beryllium-style-main', get_template_directory_uri() . '/styles/style.css' , array(), _S_VERSION);
+	wp_enqueue_style( 'beryllium-style-vendor-line', get_template_directory_uri() . '/styles/vendor/LineIcons.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'beryllium-style-vendor-rev', get_template_directory_uri() . '/styles/vendor/revolution-settings.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'beryllium-style-vendor-fancybox', get_template_directory_uri() . '/styles/vendor/jquery.fancybox.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'beryllium-style-vendor-owl', get_template_directory_uri() . '/styles/vendor/owl.carousel.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'beryllium-style-vendor-cube', get_template_directory_uri() . '/styles/vendor/cubeportfolio.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'beryllium-style-vendor-wow', get_template_directory_uri() . '/styles/vendor/wow.css', array(), _S_VERSION );
+	wp_enqueue_style( 'beryllium-style-vendor-bundle', get_template_directory_uri() . '/styles/vendor/bundle.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'beryllium-slick', get_template_directory_uri() . '/styles/slick.css', array(), _S_VERSION );
+	wp_enqueue_style( 'beryllium-slick-theme', get_template_directory_uri() . '/styles/slick-theme.css', array(), _S_VERSION );
+	wp_enqueue_style( 'beryllium-style-main', get_template_directory_uri() . '/styles/style.css', array(), _S_VERSION );
 
 
-	wp_enqueue_script('beryllium-vendor-bundle-js', get_template_directory_uri() . '/js/vendor/bundle.min.js' , array(), _S_VERSION);
-	wp_enqueue_script('beryllium-vendor-contact', get_template_directory_uri() . '/js/vendor/contact_us.js' , array(), _S_VERSION);
-	wp_enqueue_script('beryllium-vendor-appear', get_template_directory_uri() . '/js/vendor/jquery.appear.js' , array(), _S_VERSION);
-	wp_enqueue_script('beryllium-vendor-cube-js', get_template_directory_uri() . '/js/vendor/jquery.cubeportfolio.min.js' , array(), _S_VERSION);
-	wp_enqueue_script('beryllium-vendor-fancy-js', get_template_directory_uri() . '/js/vendor/jquery.fancybox.min.js' , array(), _S_VERSION);
-	wp_enqueue_script('beryllium-vendor-owl-js', get_template_directory_uri() . '/js/vendor/owl.carousel.min.js' , array(), _S_VERSION);
-	wp_enqueue_script('beryllium-vendor-parallaxie', get_template_directory_uri() . '/js/vendor/parallaxie.min.js' , array(), _S_VERSION);
-	wp_enqueue_script('beryllium-vendor-wow-js', get_template_directory_uri() . '/js/vendor/wow.min.js' , array(), _S_VERSION);
-	wp_enqueue_script('beryllium-slick-js', get_template_directory_uri() . '/js/slick.min.js' , array(), _S_VERSION);
-	wp_enqueue_script('beryllium-script-js', get_template_directory_uri() . '/js/script.js' , array(), _S_VERSION);
-	wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/3e706aa444.js' , array(), _S_VERSION);
+	wp_enqueue_script( 'beryllium-vendor-bundle-js', get_template_directory_uri() . '/js/vendor/bundle.min.js', array(), _S_VERSION );
+	wp_enqueue_script( 'beryllium-vendor-contact', get_template_directory_uri() . '/js/vendor/contact_us.js', array(), _S_VERSION );
+	wp_enqueue_script( 'beryllium-vendor-appear', get_template_directory_uri() . '/js/vendor/jquery.appear.js', array(), _S_VERSION );
+	wp_enqueue_script( 'beryllium-vendor-cube-js', get_template_directory_uri() . '/js/vendor/jquery.cubeportfolio.min.js', array(), _S_VERSION );
+	wp_enqueue_script( 'beryllium-vendor-fancy-js', get_template_directory_uri() . '/js/vendor/jquery.fancybox.min.js', array(), _S_VERSION );
+	wp_enqueue_script( 'beryllium-vendor-owl-js', get_template_directory_uri() . '/js/vendor/owl.carousel.min.js', array(), _S_VERSION );
+	wp_enqueue_script( 'beryllium-vendor-parallaxie', get_template_directory_uri() . '/js/vendor/parallaxie.min.js', array(), _S_VERSION );
+	wp_enqueue_script( 'beryllium-vendor-wow-js', get_template_directory_uri() . '/js/vendor/wow.min.js', array(), _S_VERSION );
+	wp_enqueue_script( 'beryllium-slick-js', get_template_directory_uri() . '/js/slick.min.js', array(), _S_VERSION );
+	wp_enqueue_script( 'beryllium-script-js', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION );
+	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/3e706aa444.js', array(), _S_VERSION );
 
 	// Loads google fonts for our use
 	wp_enqueue_style( 'add_google_fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap', false );
@@ -117,24 +116,11 @@ function beryllium_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'beryllium_scripts', 0 );
 
-function echoV($e) {
-	print "session: <br><pre>".print_r($e, true)."</pre><BR>";
+/**
+ * @param $e
+ * Returns iterable element passed in (assuming) as a pretty version of var_dump
+ * @return void
+ */
+function echoV( $e ): void {
+	print "session: <br><pre>" . print_r( $e, true ) . "</pre><BR>";
 }
-
-function get_base_url($path = '/') {
-	// Check if request is using HTTPS otherwise use HTTP
-	$protocol = ( ( ! empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] !== 'off' ) || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-	
-	// Get the domain name
-	$domainName = $_SERVER['HTTP_HOST'];
-
-	// Build the base URL
-	$baseUrl = $protocol . $domainName;
-
-  // Append the custom URL path to the base URL
-  $baseUrl .= $path;
-
-	return $baseUrl;
-}
-
-

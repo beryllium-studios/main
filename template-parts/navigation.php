@@ -2,12 +2,12 @@
 	<div class="container">
 		<div class="upper-nav">
 			<div class="row">
-				<div class="col-6 d-flex align-items-center">
+				<div class="col-lg-6 col-sm-12 d-flex align-items-center">
 					<div class="contact-info">
 						<span><i class="lni lni-whatsapp"></i> <a href="tel:3239891450">(323) 989-1450</a></span>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-lg-6 col-sm-12">
 					<div class="contact-social-icons d-flex justify-content-end align-items-center">
 						<ul class="upper-social-icons">
 							<?php include 'navigation/social.php'; ?>

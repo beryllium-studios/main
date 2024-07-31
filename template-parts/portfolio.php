@@ -8,14 +8,6 @@
 					<h1 class="heading">AMAZING PORTFOLIO</h1>
 				</div>
 				<div class="col-md-12 pt-5">
-					<div id="js-filters-mosaic" class="cbp-l-filters-button wow fadeInUp text-center text-lg-left" data-wow-delay="350ms">
-						<div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> ALL</div>
-						<div data-filter=".web" class="cbp-filter-item">WEB DESIGN</div>
-						<div data-filter=".logo" class="cbp-filter-item">LOGO DESIGN</div>
-						<div data-filter=".mobile" class="cbp-filter-item">MOBILE APP</div>
-						<div data-filter=".development" class="cbp-filter-item">DEVELOPMENT</div>
-					</div>
-
 					<div id="js-grid-mosaic" class="cbp cbp-l-grid-mosaic">
 						<div class="cbp-item web logo">
 							<a href="<?php echo get_template_directory_uri(); ?>/img/work1.jpg" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
@@ -89,18 +81,7 @@
 							</a>
 						</div>
 					</div>
-					<div id="js-loadMore-lightbox-gallery" class="cbp-l-loadMore-button text-data wow fadeInUp" data-wow-delay="650ms">
-						<div class="row portfolio-foot-detail text-data-inner">
-							<div class="col-7 col-lg-4 offset-lg-6 text-left pl-4">
-								<span class="p-text">We've Completed More Then</span>
-								<h4 class="p-num">530</h4>
-								<span class="p-text">Projects for Our amazing Clients</span>
-							</div>
-							<div class="col-5 col-lg-2 d-flex justify-content-end align-items-center"><a href="digital-agency/standalone.html" class="btn blue-and-black-btn rounded-pill">VIEW ALL</a></div>
-						</div>
-					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>

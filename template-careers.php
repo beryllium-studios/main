@@ -1,8 +1,6 @@
 <?php 
 /* 
   * Template Name: Careers Page
-  * description: >- 
-  Page template without sidebar 
 */
 
 ?>
@@ -54,7 +52,7 @@ include 'template-parts/navigation.php';
 		</div>
 	</div>
 
-	<!--About Star-->
+	<!--About Start-->
 	<section class="about-sec" id="about-sec">
 		<div class="container">
 			<div class="row careers-join-row">
@@ -77,7 +75,6 @@ include 'template-parts/navigation.php';
 	</section>
 	<!--About End-->
 
-	<!--Skill section start-->
 	<section class="skill-sec" id="skill-sec">
 		<div class="container">
 			<div class="row">
@@ -90,7 +87,6 @@ include 'template-parts/navigation.php';
 			</div>
 		</div>
 	</section>
-	<!-- Skill section end -->
 
 <?php
 include 'template-parts/contact.php';
