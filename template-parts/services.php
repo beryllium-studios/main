@@ -5,7 +5,6 @@
 			<div class="col-12 col-lg-12 text-center text-lg-right">
 				<h1 class="services-section-header">Services</h1>
 				<div class="skill-details">
-
 					<div class="row no-gutters services-area">
 						<div class="col-12 col-md-4 services text-center">
 							<div class="service-card wow fadeInRight" data-wow-delay=".25s">
@@ -13,7 +12,7 @@
 									<i class="lni lni-cloud"></i>
 								</div>
 								<h4 class="card-heading">AI Integration</h4>
-								<p>Your success is our mission. We provide the tools to streamline and grow your business effortlessly.</p>
+								<p> We help you identify where AI can benefit your business and provide tailored solutions to maximize efficiency and growth.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-4 services text-center">
@@ -22,7 +21,7 @@
 									<i class="lni lni-world"></i>
 								</div>
 								<h4 class="card-heading">Web Development</h4>
-								<p>Fuel your business with our cutting-edge solutions and innovative strategies.</p>
+								<p>Create responsive, user-friendly websites that enhance your online presence and engage customers effectively.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-4 services text-center">
@@ -31,7 +30,7 @@
 									<i class="lni lni-timer"></i>
 								</div>
 								<h4 class="card-heading">Automation Solutions</h4>
-								<p>We are dedicated to delivering reliable, high-quality solutions tailored to your needs.</p>
+								<p>Implement automation tools and processes to reduce manual tasks and increase operational efficiency, allowing you to focus on what matters most.</p>
 							</div>
 						</div>
 					</div>
