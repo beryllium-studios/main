@@ -3863,17 +3863,23 @@ body.error404 {
     text-align: center;
 }
 
-.page-template-template-error .overlay,
-.page-template-template-thank-you .overlay {
+.page-template-template-error .overlay {
     background: rgba(0, 0, 0, 0.45);
+}
+
+.page-template-template-thank-you .overlay {
+    background: rgba(255,255,255, 0.55);
 }
 
 
 .page-template-template-error .content,
-.page-template-template-thank-you .content,
 .error404 .content {
     color: #fff;
     z-index: 1;
+}
+
+.page-template-template-thank-you .content {
+    color: #333333;
 }
 
 .page-template-template-error h1,
