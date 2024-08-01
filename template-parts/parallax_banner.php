@@ -13,8 +13,8 @@
 					<div class="banner-right-area-content">
 						<h2>Transformative Tech Solutions</h2>
 						<p>Discover innovative, easy-to-implement tech solutions designed to help your business grow and evolve. Let us simplify your technology journey with
-							reliable, affordable services tailored to your needs.</p>
-						<a href="javascript:void(0);" class="btn btn-large btn-rounded white-tran-black-btn">Learn More</a>
+							reliable, affordable services tailored to your needs. Take our AI integration readiness quiz.</p>
+						<a href="<?php echo get_site_url(); ?>/quiz" class="btn btn-large btn-rounded white-tran-black-btn">Take the quiz</a>
 					</div>
 				</div>
 			</div>

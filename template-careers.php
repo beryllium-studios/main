@@ -75,19 +75,48 @@ include 'template-parts/navigation.php';
 	</section>
 	<!--About End-->
 
-	<section class="skill-sec" id="skill-sec">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-12 text-left text-lg-left">
-					<div class="careers-position-details">
-						<h2>Open Positions</h2>
-						<p>No available positions.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<div class="container mt-5 mb-5">
+		<h1 class="text-center">Job Listings</h1>
+		<div class="row">
 
+			<?php
+			$args = array(
+				'post_type'      => 'job',
+				'posts_per_page' => - 1
+			);
+
+			$query = new WP_Query( $args );
+
+			if ( $query->have_posts() ) {
+				while ( $query->have_posts() ) {
+					$query->the_post();
+					$fields = get_fields();
+					?>
+					<div class="col-md-4 mt-3">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title"><?php the_title(); ?></h5>
+								<?php if ( $fields['location'] ): ?>
+									<p class="card-text"><strong>Location:</strong> <?php echo esc_html( $fields['location'] ); ?></p>
+								<?php endif; ?>
+								<?php if ( $fields['work_schedule'] ): ?>
+									<p class="card-text"><strong>Type:</strong> <?php echo esc_html( $fields['work_schedule'] ); ?></p>
+								<?php endif; ?>
+								<a href="<?php the_permalink(); ?>" class="btn yellow-and-black-btn">View Job</a>
+							</div>
+						</div>
+					</div>
+					<?php
+				}
+			} else {
+				echo '<p>No available positions.</p>';
+			}
+
+			// Restore original Post Data
+			wp_reset_postdata();
+			?>
+		</div>
+	</div>
 <?php
 include 'template-parts/contact.php';
 include 'template-parts/fixed_nav.php';

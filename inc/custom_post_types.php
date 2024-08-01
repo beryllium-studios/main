@@ -42,7 +42,7 @@ function project_post_type() {
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-admin-appearance',
+		'menu_icon'             => 'dashicons-feedback',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
@@ -94,7 +94,7 @@ function staff_post_type() {
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-admin-appearance',
+		'menu_icon'             => 'dashicons-admin-users',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
@@ -109,3 +109,55 @@ function staff_post_type() {
 }
 
 add_action( 'init', 'staff_post_type', 0 );
+
+function job_listing_post_type() {
+
+	$labels = array(
+		'name'                       => _x( 'Job Listings', 'Post Type General Name', 'beryllium' ),
+		'singular_name'              => _x( 'Job Listing', 'Post Type Singular Name', 'beryllium' ),
+		'menu_name'                  => __( 'Job Listings', 'beryllium' ),
+		'all_items'                  => __( 'All Job Listings', 'beryllium' ),
+		'parent_item'                => __( 'Parent Job Listing', 'beryllium' ),
+		'parent_item_colon'          => __( 'Parent Job Listing:', 'beryllium' ),
+		'new_item_name'              => __( 'New Job Listing Name', 'beryllium' ),
+		'add_new_item'               => __( 'Add New Job Listing', 'beryllium' ),
+		'edit_item'                  => __( 'Edit Job Listing', 'beryllium' ),
+		'update_item'                => __( 'Update Job Listing', 'beryllium' ),
+		'view_item'                  => __( 'View Job Listing', 'beryllium' ),
+		'separate_items_with_commas' => __( 'Separate job listings with commas', 'beryllium' ),
+		'add_or_remove_items'        => __( 'Add or remove job listings', 'beryllium' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'beryllium' ),
+		'popular_items'              => __( 'Popular Job Listings', 'beryllium' ),
+		'search_items'               => __( 'Search Job Listings', 'beryllium' ),
+		'not_found'                  => __( 'Not Found', 'beryllium' ),
+		'no_terms'                   => __( 'No job listings', 'beryllium' ),
+		'items_list'                 => __( 'Job Listings list', 'beryllium' ),
+		'items_list_navigation'      => __( 'Job Listings list navigation', 'beryllium' ),
+	);
+
+	$args = array(
+		'label'                 => __( 'Job Listings', 'beryllium' ),
+		'description'           => __( 'Job listings.', 'beryllium' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-portfolio',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+
+	register_post_type( 'job', $args );
+
+}
+
+add_action( 'init', 'job_listing_post_type', 0 );

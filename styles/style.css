@@ -1499,10 +1499,14 @@ header {
     height: 200px;
 }
 
+.page-template-template-careers .service-details h1 {
+    color: #333333;
+}
+
 .service-details h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .service-details h1 span {
@@ -2227,11 +2231,18 @@ header {
 ====================================== */
 
 .contact-sec {
-    padding-bottom: 0;
+    padding: 50px 0 0 0;
+    background: #333333;
+    color: #FFFFFF;
+    margin-top: 100px;
+}
+
+.contact-sec .contact-details ul li {
+    color: #ffffff;
 }
 
 .contact-sec .heading {
-    color: #202020;
+    color: #ffffff;
     font-size: 40px;
     margin-bottom: 40px;
 }
@@ -2250,7 +2261,7 @@ header {
 
 #wpcf7-f65-o1 input[name="userEmail"],
 #wpcf7-f65-o1 input[name="userName"],
-#wpcf7-f65-o1 input[name="userSubject"]{
+#wpcf7-f65-o1 input[name="userSubject"] {
     max-width: 225px;
 }
 
@@ -2283,7 +2294,7 @@ header {
 .contact-sec .contact-form textarea {
     padding: 13px;
     padding-left: 25px;
-    height: 202px;
+    height: 193px;
     color: #8799a3;
     font-size: 16px;
 }
@@ -2311,7 +2322,7 @@ header {
 }
 
 .contact-sec .contact-details .text {
-    color: #202020;
+    color: #ffffff;
     opacity: .8;
 }
 
@@ -2322,7 +2333,7 @@ header {
 }
 
 .contact-sec .contact-details ul li {
-    color: #202020;
+    color: #ffffff;
     opacity: .8;
     list-style: none;
     margin-bottom: 22px;
@@ -3279,6 +3290,10 @@ header {
     margin-bottom: 40px;
 }
 
+.page-template-template-careers p.card-text {
+    margin: 0 0 16px;
+}
+
 /*Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 855px) {
     .sidemenu_btn {
@@ -3624,7 +3639,7 @@ header {
     }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
     .upper-nav .col-sm-12 {
         display: flex;
         justify-content: center;
@@ -3803,4 +3818,83 @@ header {
     font-size: 24px;
     line-height: 42px;
     padding: 15px;
+}
+
+.page-template-template-error,
+.page-template-template-thank-you,
+body.error404 {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('/wp-content/themes/beryllium/assets/images/404-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-template-template-error {
+    background: url('/wp-content/themes/beryllium/assets/images/error.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.page-template-template-thank-you {
+    background: url('/wp-content/themes/beryllium/assets/images/thank-you.jpg') no-repeat;
+    background-size: cover;
+}
+
+.page-template-template-error .overlay,
+.page-template-template-thank-you .overlay,
+.error404 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-template-template-error .overlay,
+.page-template-template-thank-you .overlay {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+
+.page-template-template-error .content,
+.page-template-template-thank-you .content,
+.error404 .content {
+    color: #fff;
+    z-index: 1;
+}
+
+.page-template-template-error h1,
+.page-template-template-thank-you h1,
+.error404.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.page-template-template-error .content p,
+.page-template-template-thank-you .content p,
+.error404 .content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.page-template-template-error .content a,
+.page-template-template-thank-you .content a,
+.error404 .content a {
+    font-size: 1.25rem;
+    padding: 10px 20px;
+}
+
+.wpcf7 form label,
+.wpcf7 form label span.wpcf7-form-control-wrap,
+.wpcf7 form label span.wpcf7-form-control-wrap input {
+    width: 100%;
 }
