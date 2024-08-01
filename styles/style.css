@@ -2259,24 +2259,24 @@ header {
     max-width: 225px;
 }
 
-#wpcf7-f65-o1 input[name="userEmail"],
-#wpcf7-f65-o1 input[name="userName"],
-#wpcf7-f65-o1 input[name="userSubject"] {
+.wpcf7 input[name="userEmail"],
+.wpcf7 input[name="userName"],
+.wpcf7 input[name="userSubject"] {
     max-width: 225px;
 }
 
-#wpcf7-f65-o1 input[type="submit"] {
+.wpcf7 input[type="submit"] {
     max-width: 100%;
     line-height: 0;
     font-family: 'Raleway', sans-serif;
     color: #FFFFFF;
 }
 
-#wpcf7-f65-o1 .wpcf7-response-output {
+.wpcf7 .wpcf7-response-output {
     border-color: #9DAF6E;
 }
 
-#wpcf7-f65-o1 .wpcf7 form.sent .wpcf7-response-output {
+.wpcf7 form.sent .wpcf7-response-output {
     border-color: #9DAF6E;
     margin: 0 auto;
 }

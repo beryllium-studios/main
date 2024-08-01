@@ -27,8 +27,13 @@ include 'template-parts/navigation.php';
 					<div class="col-12 col-lg-6 mt-5">
 						<div class="w-100">
 							<img class="careers-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/text-logo-horizontal-black.svg"/>
-
-							<?php echo do_shortcode('[contact-form-7 id="be17b9e" title="Job Application"]')?>
+							<?php
+							if ( is_prod() ) {
+								echo do_shortcode( '[contact-form-7 id="4f1303f" title="Job Application"]' );
+							} else {
+								echo do_shortcode( '[contact-form-7 id="be17b9e" title="Job Application"]' );
+							}
+							?>
 						</div>
 					</div>
 				</div>
