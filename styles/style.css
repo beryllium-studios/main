@@ -2272,6 +2272,10 @@ header {
     color: #FFFFFF;
 }
 
+.page-template-template-apply input.wpcf7-submit {
+    padding: 25px;
+}
+
 .wpcf7 .wpcf7-response-output {
     border-color: #9DAF6E;
 }
