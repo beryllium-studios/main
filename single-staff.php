@@ -21,9 +21,15 @@ $fields = get_fields();
 			<h2 class="mt-3"> <?php echo $fields['name']; ?> </h2>
 			<h5 class="text-muted"> <?php echo $fields['professional_title']; ?> </h5>
 			<div class="social-links mt-3">
-				<a href="<?php echo $fields['linkedin_profile']; ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
-				<a href="<?php echo $fields['github_profile']; ?>" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="<?php echo $fields['x_profile']; ?>" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+				<?php if ( ! empty( $fields['linkedin_profile'] ) ): ?>
+					<a href="<?php echo esc_url( $fields['linkedin_profile'] ); ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<?php endif; ?>
+				<?php if ( ! empty( $fields['github_profile'] ) ): ?>
+					<a href="<?php echo esc_url( $fields['github_profile'] ); ?>" target="_blank"><i class="fab fa-github"></i></a>
+				<?php endif; ?>
+				<?php if ( ! empty( $fields['x_profile'] ) ): ?>
+					<a href="<?php echo esc_url( $fields['x_profile'] ); ?>" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+				<?php endif; ?>
 			</div>
 			<div class="mt-5 mb-lg-5 text-left"><?php echo $fields['blurb']; ?></div>
 		</div>
