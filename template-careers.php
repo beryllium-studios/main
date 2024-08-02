@@ -97,10 +97,10 @@ include 'template-parts/navigation.php';
 							<div class="card-body">
 								<h5 class="card-title"><?php the_title(); ?></h5>
 								<?php if ( $fields['location'] ): ?>
-									<p class="card-text"><strong>Location:</strong> <?php echo esc_html( $fields['location'] ); ?></p>
+									<p class="card-text"><strong>Location:</strong> <?php echo ucfirst(esc_html( $fields['location'] )); ?></p>
 								<?php endif; ?>
 								<?php if ( $fields['work_schedule'] ): ?>
-									<p class="card-text"><strong>Type:</strong> <?php echo esc_html( $fields['work_schedule'] ); ?></p>
+									<p class="card-text"><strong>Type:</strong> <?php echo ucfirst(esc_html( $fields['work_schedule'] )); ?></p>
 								<?php endif; ?>
 								<a href="<?php the_permalink(); ?>" class="btn yellow-and-black-btn">View Job</a>
 							</div>

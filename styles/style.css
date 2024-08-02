@@ -40,12 +40,12 @@
     Google font
 ====================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 
 
 .main-font {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .alt-font {
@@ -58,11 +58,11 @@
 ====================================== */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     color: #2b2b2b;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 36px;
     width: 100%;
     overflow-x: hidden
 }
@@ -360,7 +360,7 @@ section {
 
 .white-tran-black-btn {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 30px;
     color: #ffffff !important;
     font-weight: 600;
@@ -381,7 +381,7 @@ section {
 
 .white-blue-btn {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 25px;
     color: #2b2b2b;
     font-weight: 600;
@@ -402,7 +402,7 @@ section {
 
 .white-tran-yellow-btn {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 30px;
     color: #ffffff !important;
     font-weight: 600;
@@ -423,7 +423,7 @@ section {
 
 .blue-and-black-btn {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 7px 35px;;
     color: #ffffff;;
     font-weight: 600;
@@ -444,7 +444,7 @@ section {
 
 .yellow-and-black-btn {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 7px 35px;;
     color: #ffffff;;
     font-weight: 600;
@@ -1603,7 +1603,7 @@ header {
 
 .skill-sec .skill-details .sub-title {
     color: #5bbdbb;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-transform: initial !important;
@@ -1620,7 +1620,7 @@ header {
 
 .skill-sec .skill-details .paragraph {
     color: rgba(0, 0, 0, 0.7);
-    font-family: Roboto, "sans-serif";
+    font-family: Montserrat, "sans-serif";
     font-size: 14px;
     font-weight: 400;
 }
@@ -1721,7 +1721,7 @@ header {
 
 .team-section .team-details .sub-title {
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-transform: initial !important;
@@ -1867,7 +1867,7 @@ header {
     font-size: 13px;
     font-weight: 600;
     color: #202020;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-right: 15px;
     border-bottom: solid 2px transparent;
 }
@@ -1901,7 +1901,7 @@ header {
 
 .portfolio-sec .cbp-l-caption-title {
     color: #ffffff !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
     font-weight: 400 !important;
     font-size: 15px !important;
 }
@@ -1935,7 +1935,7 @@ header {
 }
 
 .portfolio-sec .portfolio-hover-effect .hover-text .p-hover-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #FFFFFF;
     font-weight: 500;
@@ -1986,7 +1986,7 @@ header {
 .portfolio-sec .portfolio-foot-detail .p-text {
     color: #202020;
     font-size: 13px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     display: inline-block;
     margin-bottom: 8px;
@@ -2000,7 +2000,7 @@ header {
 .portfolio-sec .portfolio-foot-detail .p-num {
     color: #202020;
     font-size: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -2084,7 +2084,7 @@ header {
     color: #202020;
     font-size: 18px;
     font-weight: 400;
-    font-family: Roboto, sans-serif;
+    font-family: Montserrat, sans-serif;
     text-transform: initial !important;
 }
 
@@ -2316,7 +2316,7 @@ header {
 }
 
 .contact-sec .contact-details {
-    font-family: Roboto, sans-serif;
+    font-family: Montserrat, sans-serif;
     width: 90%;
     margin-left: 20px;
 }
@@ -2519,7 +2519,7 @@ header {
 
 .standalone-detail .para_text {
     color: #202020;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 15px;
     margin: 0 auto;
@@ -2538,7 +2538,7 @@ header {
 }
 
 .standalone-area .stand-img-des .para_text {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #202020;
 }
 
@@ -3868,7 +3868,7 @@ body.error404 {
 }
 
 .page-template-template-thank-you .overlay {
-    background: rgba(255,255,255, 0.55);
+    background: rgba(255, 255, 255, 0.55);
 }
 
 
@@ -3907,4 +3907,55 @@ body.error404 {
 .wpcf7 form label span.wpcf7-form-control-wrap,
 .wpcf7 form label span.wpcf7-form-control-wrap input {
     width: 100%;
+}
+
+.article,
+.staff,
+.case-study-article {
+    padding-top: 300px;
+}
+
+.case-study-article section.content-section {
+    padding: 25px 0;
+}
+
+figure.aligncenter {
+    margin: 40px auto;
+}
+
+.author-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.author-details img {
+    border-radius: 50%;
+    max-width: 40px;
+}
+
+.social-share a.btn {
+    width: 50px;
+    padding: 5px 10px;
+}
+
+.reading-time .alert {
+    padding: 10px 20px 10px 0;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    margin: 0 auto;
+}
+
+.single-staff .social-links a {
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.single-staff .profile-card img {
+    max-width: 200px;
+    border-radius: 50%;
 }

@@ -5,81 +5,61 @@
 			<div class="row">
 				<div class="col-lg-6 wow fadeInUp text-center text-lg-left" data-wow-delay="300ms">
 					<h1 class="heading">OUR</h1>
-					<h1 class="heading">AMAZING PORTFOLIO</h1>
+					<h1 class="heading">CASE STUDIES</h1>
 				</div>
 				<div class="col-md-12 pt-5">
 					<div id="js-grid-mosaic" class="cbp cbp-l-grid-mosaic">
-						<div class="cbp-item web logo">
-							<a href="<?php echo get_template_directory_uri(); ?>/img/work1.jpg" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-								<div class="cbp-caption-defaultWrap">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/work1.jpg" alt="img">
-								</div>
-								<div class="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
-									<div class="portfolio-inner-content">
-										<span></span>
-										<span></span>
-									</div>
-									<div class="hover-text">
-										<h4 class="p-hover-title">Creative</h4>
-										<p class="p-hover-des">35 WP Anniversary</p>
-									</div>
-								</div>
-							</a>
-						</div>
 
-						<div class="cbp-item mobile web">
-							<a href="<?php echo get_template_directory_uri(); ?>/img/work2.jpg" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-								<div class="cbp-caption-defaultWrap">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/work2.jpg" alt="img">
-								</div>
-								<div class="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
-									<div class="portfolio-inner-content">
-										<span></span>
-										<span></span>
-									</div>
-									<div class="hover-text">
-										<h4 class="p-hover-title">Web Design</h4>
-										<p class="p-hover-des">35 WP Anniversary</p>
-									</div>
-								</div>
-							</a>
-						</div>
+						<?php
+						$args = array(
+							'post_type'      => 'project',
+							'post_status'    => 'publish', // Only get published posts
+							'orderby'        => 'date',
+							'order'          => 'DESC',
+							'posts_per_page' => 6, // Retrieve the latest 6 posts
+							'has_password'   => false // Exclude password-protected posts
+						);
 
-						<div class="cbp-item print logo development web mobile">
-							<a href="<?php echo get_template_directory_uri(); ?>/img/work3.jpg" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-								<div class="cbp-caption-defaultWrap">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/work3.jpg" alt="img">
-								</div>
-								<div class="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
-									<div class="portfolio-inner-content">
-										<span></span>
-										<span></span>
-									</div>
-									<div class="hover-text">
-										<h4 class="p-hover-title">Logo Design</h4>
-										<p class="p-hover-des">35 WP Anniversary</p>
-									</div>
-								</div>
-							</a>
-						</div>
+						$project_query = new WP_Query( $args );
 
-						<div class="cbp-item logo development">
-							<a href="<?php echo get_template_directory_uri(); ?>/img/work4.jpg" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-								<div class="cbp-caption-defaultWrap">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/work4.jpg" alt="img">
+						if ( $project_query->have_posts() ) {
+
+							while ( $project_query->have_posts() ) {
+								$project_query->the_post();
+								$fields = get_fields();
+
+								$project_image = $fields['card_image'];
+
+								// now we render each project
+								?>
+								<div class="cbp-item">
+									<!-- case study permalink -->
+									<a href="<?php echo get_permalink(); ?>" class="cbp-caption">
+										<div class="cbp-caption-defaultWrap">
+											<!-- case study featured image 565x464 -->
+											<img src="<?php echo $project_image; ?>" alt="img">
+										</div>
+										<div class="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
+											<div class="hover-text">
+												<!-- case study title and company -->
+												<h4 class="p-hover-title"><?php echo $fields['client']; ?></h4>
+												<p class="p-hover-des"><?php echo $fields['type']; ?></p>
+											</div>
+										</div>
+									</a>
 								</div>
-								<div class="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
-									<div class="portfolio-inner-content">
-										<span></span>
-										<span></span>
-									</div>
-									<div class="hover-text">
-										<h4 class="p-hover-title">Development</h4>
-										<p class="p-hover-des">35 WP Anniversary</p>
-									</div>
-								</div>
-							</a>
-						</div>
+								<?php
+							}
+
+							// Restore original post data
+							wp_reset_postdata();
+						} else {
+							// No posts found
+							echo '<p>No projects found.</p>';
+						}
+						?>
+
+
 					</div>
 				</div>
 			</div>

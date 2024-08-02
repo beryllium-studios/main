@@ -12,6 +12,9 @@ require 'inc/WP_Custom_Nav_Walker.php';
 require 'inc/custom_filters.php';
 require 'inc/custom_fields_staff.php';
 require 'inc/custom_fields_job_listings.php';
+require 'inc/custom_fields_articles.php';
+require 'inc/custom_fields_case_study.php';
+require 'inc/custom_fields_author_settings.php';
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
@@ -131,4 +134,18 @@ function is_prod(): bool {
 	$site_url = get_site_url();
 
 	return str_contains( $site_url, 'www.berylliumstudios.com' );
+}
+
+function calculate_reading_time($post_id) {
+	// Get the content of the post
+	$content = get_post_field('post_content', $post_id);
+
+	// Calculate the number of words
+	$word_count = str_word_count(strip_tags($content));
+
+	// Average reading speed (words per minute)
+	$reading_speed = 200;
+
+	// Calculate reading time in minutes
+	return ceil( $word_count / $reading_speed);
 }
