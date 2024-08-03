@@ -3,3 +3,25 @@ html[uip-theme-basic=true] #adminmenu::before {
     width: 50px;
     margin: 0 auto 30px auto;
 }
+
+#wp-admin-bar-my-account span.display-name {
+    margin-left: 5px;
+}
+
+#wp-admin-bar-user-actions span.display-name {
+    margin-left: 0;
+}
+
+#wpadminbar #wp-admin-bar-user-info a {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+span.display-name.edit-profile {
+    margin-top: 15px !important;
+}
+
+html[uip-theme-basic=true] #wp-admin-bar-user-info .avatar {
+    outline: 2px solid #02aeb3 !important;
+}
