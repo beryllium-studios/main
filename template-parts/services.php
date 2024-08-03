@@ -12,7 +12,7 @@
 									<i class="lni lni-cloud"></i>
 								</div>
 								<h4 class="card-heading">AI Integration</h4>
-								<p> We help you identify where AI can benefit your business and provide tailored solutions to maximize efficiency and growth.</p>
+								<p> Unlock the potential of AI for your business. We provide personalized solutions to enhance efficiency and drive growth.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-4 services text-center">
@@ -21,7 +21,7 @@
 									<i class="lni lni-world"></i>
 								</div>
 								<h4 class="card-heading">Web Development</h4>
-								<p>Create responsive, user-friendly websites that enhance your online presence and engage customers effectively.</p>
+								<p>Create a compelling online presence with our responsive, user-friendly websites designed to engage and captivate your audience.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-4 services text-center">
@@ -30,7 +30,7 @@
 									<i class="lni lni-timer"></i>
 								</div>
 								<h4 class="card-heading">Automation Solutions</h4>
-								<p>Implement automation tools and processes to reduce manual tasks and increase operational efficiency, allowing you to focus on what matters most.</p>
+								<p>Streamline your operations with our automation tools, allowing you to focus on what truly matters—growing your business.</p>
 							</div>
 						</div>
 					</div>
