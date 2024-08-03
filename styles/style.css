@@ -2266,7 +2266,8 @@ header {
 .wpcf7 input[name="userEmail"],
 .wpcf7 input[name="userName"],
 .wpcf7 input[name="userSubject"] {
-    max-width: 225px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .wpcf7 input[type="submit"] {
@@ -3315,7 +3316,7 @@ header {
     .sidemenu_btn {
         position: absolute;
         right: 80px;
-        top: 145px;
+        top: 165px;
     }
 
     .sidemenu_btn i {
@@ -3347,7 +3348,6 @@ header {
     .banner-text-right {
         padding-bottom: 50px;
         margin-right: 0;
-        transform: translateY(0);
     }
 
     /*ABOUT SEC*/
@@ -3555,7 +3555,7 @@ header {
 
     .banner .banner-row {
         height: 110vh;
-        padding-top: 275px;
+        padding-top: 200px;
         width: 100%;
     }
 
@@ -3570,7 +3570,7 @@ header {
 
     .lastest-blog .pot-2 {
         left: 100px;
-        bottom: 0px;
+        bottom: 0;
         width: 40%;
     }
 
@@ -3626,7 +3626,7 @@ header {
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     .sidemenu_btn {
-        top: 145px !important;
+        top: 165px !important;
     }
 }
 
