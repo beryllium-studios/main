@@ -68,8 +68,7 @@
 					<?php include 'navigation/social.php'; ?>
 				</ul>
 			</div>
-
-		</div>sss
+		</div>
 	</div>
 	<a id="close_side_menu" href="javascript:void(0);"></a>
 </header>

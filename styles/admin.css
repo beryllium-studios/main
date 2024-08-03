@@ -1,0 +1,5 @@
+html[uip-theme-basic=true] #adminmenu::before {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto 30px auto;
+}

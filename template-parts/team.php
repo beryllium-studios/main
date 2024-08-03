@@ -33,9 +33,11 @@
 					        // Display the post
 					        ?>
 						    <div class="item text-center wow fadeInUp" data-wow-delay=".3s">
-							    <div class="image-holder">
-								    <img src="<?php echo $image; ?>" alt="<?php echo $name; ?>">
-							    </div>
+							    <a href="<?php echo get_permalink(); ?>">
+								    <div class="image-holder">
+									    <img src="<?php echo $image; ?>" alt="<?php echo $name; ?>">
+								    </div>
+							    </a>
 							    <h3 class="team-name"><?php echo $name; ?></h3>
 						    </div>
 					        <?php

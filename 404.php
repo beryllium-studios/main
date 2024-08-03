@@ -13,7 +13,7 @@ get_header(); ?>
 		<div class="content">
 			<h1>Oops! You seem to be lost.</h1>
 			<p>The page you are looking for does not exist.</p>
-			<a href="<?php echo home_url(); ?>" class="btn yellow-and-black-btn">Go Home</a>
+			<a href="<?php echo home_url(); ?>" class="btn btn-rounded yellow-and-black-btn">Go Home</a>
 		</div>
 	</div>
 
