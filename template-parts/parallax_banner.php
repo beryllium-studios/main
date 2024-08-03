@@ -12,8 +12,10 @@
 					<div class="overlay-yellow-box"></div>
 					<div class="banner-right-area-content">
 						<h2>Transformative Tech Solutions</h2>
-						<p>Discover innovative, easy-to-implement tech solutions designed to help your business grow and evolve. Let us simplify your technology journey with
-							reliable, affordable services tailored to your needs. Take our AI integration readiness quiz.</p>
+						<p>Discover innovative, user-friendly tech solutions tailored to help your business thrive. Our mission is to simplify your technology needs with reliable, affordable services that fit your unique business requirements.
+                            <br>
+                            <br>
+                            Ready to get started? Take our AI integration readiness quiz.</p>
 						<a href="<?php echo get_site_url(); ?>/quiz" class="btn btn-large btn-rounded white-tran-black-btn">Take the quiz</a>
 					</div>
 				</div>
