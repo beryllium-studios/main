@@ -13,9 +13,6 @@
                         Interested in learning more about how we can support your business? Schedule a quick 15-minute introductory meeting with us.
                     </p>
                     <a href="https://calendly.com/andy-berylliumstudios/intro-call" class="btn btn-large btn-rounded btn-black-white-background mr-2 mt-2" target="_blank">Schedule Your Intro Meeting</a>
-
-                    <a href="javascript:void(0);" class="btn btn-large btn-rounded btn-black-white-background mr-2 mt-2">Schedule Your Intro Meeting</a>
-
 				</div>
 			</div>
 		</div>
