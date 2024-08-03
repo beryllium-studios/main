@@ -1385,7 +1385,11 @@ header {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 60px;
-    margin-top: -55px;
+    margin-top: 0;
+}
+
+.banner-row:nth-child(2) {
+    margin-top: 60px;
 }
 
 .banner-text-left p {
@@ -1419,7 +1423,7 @@ header {
 }
 
 .banner-right-area-content a {
-    width: 50%;
+    width: 80%;
     margin-left: 20px;
 }
 
@@ -3343,7 +3347,7 @@ header {
     .banner-text-right {
         padding-bottom: 50px;
         margin-right: 0;
-        transform: translateY(-30px);
+        transform: translateY(0);
     }
 
     /*ABOUT SEC*/
@@ -3551,7 +3555,7 @@ header {
 
     .banner .banner-row {
         height: 110vh;
-        padding-top: 245px;
+        padding-top: 275px;
         width: 100%;
     }
 
@@ -3561,7 +3565,7 @@ header {
 
     .sidemenu_btn {
         right: 27px;
-        top: 140px;
+        top: 160px;
     }
 
     .lastest-blog .pot-2 {

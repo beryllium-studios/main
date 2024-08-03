@@ -149,3 +149,11 @@ function calculate_reading_time($post_id) {
 	// Calculate reading time in minutes
 	return ceil( $word_count / $reading_speed);
 }
+
+function custom_admin_experience() {
+	if ( is_admin() ) {
+		wp_enqueue_style( 'beryllium-admin-style', get_template_directory_uri() . '/styles/admin.css', array(), _S_VERSION );
+	}
+}
+
+add_action( 'admin_enqueue_scripts', 'custom_admin_experience' );
