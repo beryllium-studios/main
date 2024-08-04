@@ -16,6 +16,9 @@ require 'inc/custom_fields_articles.php';
 require 'inc/custom_fields_case_study.php';
 require 'inc/custom_fields_author_settings.php';
 
+// register all API endpoints
+require 'inc/api/quiz.php';
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
