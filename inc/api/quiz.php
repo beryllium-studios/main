@@ -1,5 +1,4 @@
 <?php
-
 function engine_response( $request ): WP_REST_Response {
 	global $wpdb;
 
@@ -25,6 +24,22 @@ function engine_response( $request ): WP_REST_Response {
 
 		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 		dbDelta( $sql );
+	}
+
+	// Check for duplicate entry
+	$query = $wpdb->prepare(
+		"SELECT COUNT(*) FROM $table_name WHERE quiz_name = %s AND user_answers = %s AND company_name = %s AND email = %s",
+		$quiz_name, $user_answers, $company_name, $email
+	);
+	$existing_entry = $wpdb->get_var( $query );
+
+	if ( $existing_entry > 0 ) {
+		$response    = [
+			'status'  => 'error',
+			'message' => 'Duplicate entry exists.',
+		];
+		$status_code = 409; // Conflict
+		return new WP_REST_Response( $response, $status_code );
 	}
 
 	// Insert data into the database

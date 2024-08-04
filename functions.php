@@ -21,7 +21,7 @@ require 'inc/api/quiz.php';
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.1' );
 }
 
 
@@ -122,6 +122,21 @@ function beryllium_scripts(): void {
 }
 
 add_action( 'wp_enqueue_scripts', 'beryllium_scripts', 0 );
+
+function quiz_page_scripts(): void {
+	// load only if on the quiz template page
+	if (get_page_template_slug() === 'template-quiz.php') {
+		// we must use the same version of React and react-dom as the application
+		wp_enqueue_script('react', 'https://unpkg.com/react@18/umd/react.production.min.js', array(), null, true);
+		wp_enqueue_script('react-dom', 'https://unpkg.com/react-dom@18/umd/react-dom.production.min.js', array('react'), null, true);
+
+		// Make sure to load the files once the DOM has loaded - add event listener in the React app for that - to load on to #root element.
+		wp_enqueue_script('bes-react-quiz-js', get_template_directory_uri() . '/js/quiz/main.f6d6e5fe.js', array(), _S_VERSION);
+		wp_enqueue_style('bes-react-quiz-css', get_template_directory_uri() . '/styles/quiz/main.a730fcb0.css', array(), _S_VERSION);
+ 	}
+}
+
+add_action( 'wp_enqueue_scripts', 'quiz_page_scripts', 99 );
 
 /**
  * @param $e
