@@ -134,7 +134,7 @@ function quiz_page_scripts(): void {
 		wp_enqueue_script('react-dom', 'https://unpkg.com/react-dom@18/umd/react-dom.production.min.js', array('react'), null, true);
 
 		// Make sure to load the files once the DOM has loaded - add event listener in the React app for that - to load on to #root element.
-		wp_enqueue_script('bes-react-quiz-js', get_template_directory_uri() . '/js/quiz/main.08c48a5f.js', array(), _S_VERSION);
+		wp_enqueue_script('bes-react-quiz-js', get_template_directory_uri() . '/js/quiz/main.e5611471.js', array(), _S_VERSION);
 		wp_enqueue_style('bes-react-quiz-css', get_template_directory_uri() . '/styles/quiz/main.a730fcb0.css', array(), _S_VERSION);
  	}
 }
