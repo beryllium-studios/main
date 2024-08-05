@@ -40,3 +40,17 @@ function set_custom_avatar_image($avatar_url, $id_or_email, $args) {
 
 	return $avatar_url;
 }
+
+add_filter('http_request_args', 'bes_http_request_args', 100, 1);
+function bes_http_request_args($r) //called on line 237
+{
+	$r['timeout'] = 15;
+	return $r;
+}
+
+add_action('http_api_curl', 'bes_http_api_curl', 100, 1);
+function bes_http_api_curl($handle): void //called on line 1315
+{
+	curl_setopt( $handle, CURLOPT_CONNECTTIMEOUT, 15 );
+	curl_setopt( $handle, CURLOPT_TIMEOUT, 15 );
+}
