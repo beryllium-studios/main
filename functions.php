@@ -178,3 +178,38 @@ function custom_admin_experience() {
 }
 
 add_action( 'admin_enqueue_scripts', 'custom_admin_experience' );
+
+/**
+ * @param $mimes
+ *
+ * Removes potentially dangerous file types from being uploaded to the /uploads folder
+ *
+ * @return mixed
+ */
+function update_mime_types( $mimes ) {
+	unset( $mimes['php'] );
+	unset( $mimes['exe'] );
+	unset( $mimes['sh'] );
+
+	return $mimes;
+}
+
+add_filter( 'upload_mimes', 'update_mime_types' );
+
+// Remove WordPress version number from the header
+remove_action( 'wp_head', 'wp_generator' );
+
+// Remove WordPress version number from RSS feeds
+add_filter( 'the_generator', '__return_empty_string' );
+
+// Remove WordPress version number from scripts and styles
+function remove_wp_version_strings( $src ) {
+	if ( strpos( $src, 'ver=' ) ) {
+		$src = remove_query_arg( 'ver', $src );
+	}
+
+	return $src;
+}
+
+add_filter( 'script_loader_src', 'remove_wp_version_strings' );
+add_filter( 'style_loader_src', 'remove_wp_version_strings' );
