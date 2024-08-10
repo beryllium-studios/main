@@ -66,13 +66,23 @@ function beryllium_quiz_entries_page() {
 						<td><?php echo esc_html( $entry->created_at ); ?></td>
 						<td>
 							<?php if (!empty($entry->llm_response)) { ?>
-							<div class="llm-response-container">
-								<?php echo esc_html( $entry->llm_response ); ?>
-							</div>
+								<div class="llm-response-container">
+									<?php echo esc_html( $entry->llm_response ); ?>
+								</div>
 							<?php } ?>
 						</td>
 						<td>
-							<a href="#" class="delete-entry" data-id="<?php echo esc_attr( $entry->id ); ?>">Trash</a>
+							<a href="#" class="delete-entry" data-id="<?php echo esc_attr( $entry->id ); ?>" style="color: #e73535;">
+								<i class="fas fa-trash-alt"></i> Delete / Deny ?
+							</a>
+							|
+							<a href="#" class="email-preview" data-response="<?php echo esc_attr( $entry->llm_response ); ?>">
+								<i class="fa-regular fa-eye"></i> Email Preview ?
+							</a>
+							|
+							<a href="#" class="email-preview" data-response="<?php echo esc_attr( $entry->llm_response ); ?>">
+								<i class="fas fa-envelope"></i> Send?
+							</a>
 						</td>
 					</tr>
 				<?php endforeach; ?>
@@ -91,6 +101,7 @@ function beryllium_quiz_entries_page() {
             padding: 5px;
         }
 	</style>
+
 	<script type="text/javascript">
       jQuery(document).ready(function($) {
         $('.delete-entry').on('click', function(e) {
@@ -98,6 +109,24 @@ function beryllium_quiz_entries_page() {
           var entryId = $(this).data('id');
           $('input[name="entry_ids[]"][value="' + entryId + '"]').prop('checked', true);
           $('form').submit();
+        });
+
+        $('.email-preview').on('click', function(e) {
+          e.preventDefault();
+          var response = $(this).data('response');
+          if (response) {
+            var textResponse = response?.Response?.outputs?.text ?? "No response found.";
+            var emailContent = `
+                    <h2>Test Email Preview</h2>
+                    <p>Dear [Company Name],</p>
+                    <p>${textResponse}</p>
+                    <p>Best regards,<br>Your Company</p>
+                `;
+            var emailWindow = window.open("", "Email Preview", "width=600,height=400");
+            emailWindow.document.write(emailContent);
+          } else {
+            alert('No LLM response available to preview.');
+          }
         });
       });
 	</script>

@@ -126,6 +126,12 @@ function beryllium_scripts(): void {
 
 add_action( 'wp_enqueue_scripts', 'beryllium_scripts', 0 );
 
+function enqueue_fontawesome() {
+	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' );
+}
+
+add_action( 'admin_enqueue_scripts', 'enqueue_fontawesome' );
+
 function quiz_page_scripts(): void {
 	// load only if on the quiz template page
 	if (get_page_template_slug() === 'template-quiz.php') {
