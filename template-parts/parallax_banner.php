@@ -12,7 +12,7 @@
 					<div class="overlay-yellow-box"></div>
 					<div class="banner-right-area-content">
 						<h2>Transformative Tech Solutions</h2>
-						<p>Discover innovative, user-friendly tech solutions tailored to help your business thrive. Our mission is to simplify your technology needs with reliable, affordable services that fit your unique business requirements.
+						<p>Our mission is to simplify your technology needs with reliable, affordable services that fit your unique business requirements.
                             <br>
                             <br>
                             Ready to get started? Take our AI integration readiness quiz.</p>

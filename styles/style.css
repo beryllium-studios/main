@@ -1444,22 +1444,22 @@ header {
 }
 
 .banner-right-area-content p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
     font-family: 'Raleway', sans-serif;
     padding: 20px;
 }
 
-@media screen and (min-width: 1920px) {
-    .banner-right-area-content h2 {
-        font-size: 52px;
-    }
+/*@media screen and (min-width: 1920px) {*/
+/*    .banner-right-area-content h2 {*/
+/*        font-size: 52px;*/
+/*    }*/
 
-    .banner-right-area-content p {
-        font-size: 26px;
-        line-height: 42px;
-    }
-}
+/*    .banner-right-area-content p {*/
+/*        font-size: 26px;*/
+/*        line-height: 42px;*/
+/*    }*/
+/*}*/
 
 #banner_svg {
     position: absolute;
@@ -3655,6 +3655,12 @@ header {
     }
 }
 
+@media screen and (max-width: 465px) {
+    .banner-text-left {
+        display: none;
+    }
+}
+
 @media (min-width: 1200px) and (max-width: 1599px) {
 
     /*custom classes*/
@@ -3675,11 +3681,6 @@ header {
 
     .banner-text-left h1 {
         font-size: 50px;
-    }
-
-    .banner-right-area-content h2 {
-        font-size: 50px;
-        margin-bottom: 10px;
     }
 
     .banner-text-left p {
