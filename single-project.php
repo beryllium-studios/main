@@ -26,7 +26,7 @@ $fields = get_fields();
 				<div class="content-wrapper col-lg-12 col-12 mt-5">
 					<ul class="meta list-unstyled">
 						<li class="mb-2"><strong class="me-1">Client:</strong> <?php echo $fields['client']; ?></li>
-						<li class="mb-2"><strong class="me-1">What we did:</strong> <?php echo $fields['type']; ?></li>
+						<li class="mb-2"><strong class="me-1">Project Type:</strong> <?php echo $fields['type']; ?></li>
 						<?php if ( strlen( $fields['url'] ) !== 0 ) { ?>
 							<li><strong class="me-1">Site link: </strong>
 								<a class="text-link"

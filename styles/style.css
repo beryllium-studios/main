@@ -3964,3 +3964,16 @@ figure.aligncenter {
     max-width: 200px;
     border-radius: 50%;
 }
+
+.case-study-article .project-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.case-study-article .project-type {
+    font-size: 22px;
+    padding: 0 200px;
+    margin: 0 auto;
+    font-weight: 300;
+}
