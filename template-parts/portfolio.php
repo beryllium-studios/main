@@ -42,8 +42,8 @@
 										<div class="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
 											<div class="hover-text">
 												<!-- case study title and company -->
-												<h4 class="p-hover-title"><?php echo $fields['client']; ?></h4>
-												<p class="p-hover-des"><?php echo $fields['type']; ?></p>
+												<h4 class="p-hover-title"><?php echo $fields['type']; ?></h4>
+												<p class="p-hover-des"><?php echo $fields['client']; ?></p>
 											</div>
 										</div>
 									</a>
