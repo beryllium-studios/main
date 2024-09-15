@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-12 col-lg-12">
 				<div class="team-details pr-lg-5">
-					<h2 class="title">Our Creative Team</h2>
+					<h2 class="title">Our Team</h2>
 				</div>
 			</div>
 			<div class="col-12 col-lg-12 team-member-area">
