@@ -22,8 +22,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="format-detection" content="telephone=no"/>
 	<meta name="format-detection" content="address=no"/>
-	<meta name="author" content="ArtStyles" />
-	<meta name="description" content="A trendy, minimalistic and ultra modern HTML5 template for digital agency." />
+	<meta name="author" content="Beryllium Studios" />
 
 	<!-- Favicons -->
 	<!-- `sizes="any"` is to fix Chrome bug -->

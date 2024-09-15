@@ -1011,7 +1011,6 @@ header {
     transition: transform .5s ease;
     transition: transform .5s ease, -webkit-transform .5s ease;
     overflow: hidden;
-    /*opacity:0;*/
 }
 
 .side-menu-opacity {
@@ -1122,13 +1121,7 @@ header {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
-    width: 36px;
-    padding: 6px;
-    margin-right: 1rem;
-    position: absolute;
-    right: 15px;
-    top: 108px;
-    display: inline-block;
+    display: flex;
 }
 
 .sidemenu_btn i {
@@ -1146,7 +1139,6 @@ header {
     display: inline-block;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    /*align-items: center;*/
     text-align: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1410,10 +1402,11 @@ header {
 }
 
 .banner-text-right {
-    padding: 50px 20px;
-    padding-bottom: 70px;
+    padding: 50px 20px 70px;
     position: relative;
-    margin-right: 20px;
+    max-width: 65%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .banner-right-area-content {
@@ -1449,17 +1442,6 @@ header {
     font-family: 'Raleway', sans-serif;
     padding: 20px;
 }
-
-/*@media screen and (min-width: 1920px) {*/
-/*    .banner-right-area-content h2 {*/
-/*        font-size: 52px;*/
-/*    }*/
-
-/*    .banner-right-area-content p {*/
-/*        font-size: 26px;*/
-/*        line-height: 42px;*/
-/*    }*/
-/*}*/
 
 #banner_svg {
     position: absolute;
@@ -1581,7 +1563,6 @@ header {
 
 .about-sec .services-area .services:hover .service-card .icon-holder {
     animation: .8s pulse infinite;
-    /*transform: translateY(-10px);*/
 }
 
 .about-sec .services-area .services .service-card .card-heading {
@@ -1667,7 +1648,6 @@ header {
 .skill-sec .skill-bars .progress-item .progress {
     height: 15px !important;
     overflow: visible;
-    /*margin-right: 15px;*/
 }
 
 .skill-sec .skill-bars .progress-item {
@@ -1831,7 +1811,6 @@ header {
 /***********************************/
 .portfolio-sec {
     margin-bottom: 30px;
-    /*transition: .8s ease;*/
 }
 
 .portfolio-sec .container {
@@ -1959,7 +1938,6 @@ header {
 .portfolio-sec #js-loadMore-lightbox-gallery.active {
     margin-top: -150px;
     position: relative;
-    /*z-index: -1 !important;*/
 }
 
 .portfolio-sec #js-loadMore-lightbox-gallery.active-outer {
@@ -2467,14 +2445,6 @@ header {
     Background images
 ====================================== */
 
-.bg-img1 {
-    /*background-image: url("../img/cover-background.jpg");*/
-}
-
-.bg-img2 {
-    /*background-image: url("../img/testimionial.jpg");*/
-}
-
 [class*=bg-img] {
     position: relative;
     background-size: cover;
@@ -2486,7 +2456,6 @@ header {
 }
 
 
-/**/
 /*STAND ALONE PAGE*/
 
 
@@ -2563,10 +2532,6 @@ header {
     animation: .5s fadeInRight;
 }
 
-.fixed-nav-on-scroll .row {
-    /*width: 0%;*/
-}
-
 .fixed-nav-on-scroll .logo-fixed-scroll {
     width: 50%;
     display: inline-block;
@@ -2597,12 +2562,6 @@ header {
 .fixed-nav-appear {
     display: block;
 }
-
-/*.fixed-nav-on-scroll .box-content img{*/
-/*    height: 100%;*/
-/*    width: 100%;*/
-/*}*/
-
 
 /* ===================================
    Other Page
@@ -2940,7 +2899,7 @@ header {
 
     .sidemenu_btn {
         position: relative;
-        right: 0;
+        right: 20px;
         margin: 0;
     }
 
@@ -3059,13 +3018,6 @@ header {
         margin-bottom: 50px;
     }
 
-    /*toggle btn*/
-    .sidemenu_btn {
-        position: absolute;
-        right: 100px;
-        top: 90px;
-    }
-
     .sidemenu_btn i {
         font-size: 30px;
         color: #202020;
@@ -3086,17 +3038,9 @@ header {
         position: relative;
     }
 
-    .banner .banner-row {
-        height: 1024px;
-        padding-top: 200px;
-        width: 60%;
-        margin: 0 auto;
-    }
-
     .banner-text-right {
         padding-bottom: 50px;
-        margin-right: 0;
-        transform: translateY(-70px);
+        max-width: 100%;
     }
 
     /*ABOUT SEC*/
@@ -3303,22 +3247,7 @@ header {
     margin: 0 0 16px;
 }
 
-/*Extra small devices (portrait phones, less than 576px)*/
-@media screen and (max-width: 855px) {
-    .sidemenu_btn {
-        right: 90px;
-    }
-}
-
-/*@media (max-width: 575.98px) {*/
 @media (max-width: 767px) {
-    /*toggle btn*/
-    .sidemenu_btn {
-        position: absolute;
-        right: 80px;
-        top: 165px;
-    }
-
     .sidemenu_btn i {
         font-size: 30px;
         color: #202020;
@@ -3339,15 +3268,8 @@ header {
         position: relative;
     }
 
-    .banner .banner-row {
-        /*height: 110vh;*/
-        /*padding-top: 200px;*/
-        width: 80%;
-    }
-
     .banner-text-right {
         padding-bottom: 50px;
-        margin-right: 0;
     }
 
     /*ABOUT SEC*/
@@ -3537,35 +3459,14 @@ header {
     }
 }
 
-@media (max-width: 622.98px) {
-    .sidemenu_btn {
-        right: 80px;
-    }
-}
-
 @media (max-width: 575.98px) {
 
     .side-menu {
         width: 100%;
     }
 
-    .sidemenu_btn {
-        right: 27px;
-    }
-
-    .banner .banner-row {
-        height: 110vh;
-        padding-top: 200px;
-        width: 100%;
-    }
-
     .navbar .navbar-brand img {
         max-width: 24px;
-    }
-
-    .sidemenu_btn {
-        right: 27px;
-        top: 160px;
     }
 
     .lastest-blog .pot-2 {
@@ -3601,7 +3502,6 @@ header {
     .banner .banner-row {
         height: 140vh;
         padding-top: 200px;
-        width: 100%;
     }
 
     .side-menu .inner-wrapper {
@@ -3618,18 +3518,11 @@ header {
     }
 }
 
-@media (max-width: 400px) {
-
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-
+@media (min-width: 991px) {
     .sidemenu_btn {
-        top: 165px !important;
+        display: none;
     }
 }
-
 
 @media (max-width: 320px) {
 
@@ -3642,9 +3535,6 @@ header {
         font-size: 13px;
     }
 
-    .sidemenu_btn {
-        top: 130px;
-    }
 }
 
 @media screen and (max-width: 991px) {
@@ -3779,10 +3669,6 @@ header {
 @media (min-width: 1600px) {
     .sidemenu_btn {
         margin-right: 5rem;
-    }
-
-    .banner-text-right {
-        margin-right: 80px;
     }
 
     .banner-row {

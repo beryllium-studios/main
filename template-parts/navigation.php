@@ -34,15 +34,16 @@
 							);
 							?>
 						</div>
+						<!--Side Menu Button-->
+						<a href="javascript:void(0)" class="sidemenu_btn" id="sidemenu_toggle">
+							<i class="lni lni-menu"></i>
+						</a>
 					</nav>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--Side Menu Button-->
-	<a href="javascript:void(0)" class="sidemenu_btn" id="sidemenu_toggle">
-		<i class="lni lni-menu"></i>
-	</a>
+
 	<!--Side Nav-->
 	<div class="side-menu hidden side-menu-opacity">
 		<div class="inner-wrapper">
