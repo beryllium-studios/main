@@ -69,7 +69,10 @@ $fields = get_fields();
 								<?php echo $fields['results']; ?>
 							</section>
 						<?php endif; ?>
-
+						<div class="article-navigator">
+							<?php previous_post_link('%link', '<i class="fa fa-angle-left"></i> Prev'); ?>
+							<?php next_post_link('%link', 'Next <i class="fa fa-angle-right"></i>'); ?>
+						</div>
 						<?php include 'template-parts/cta-call.php'; ?>
 					</div>
 

@@ -3858,8 +3858,24 @@ figure.aligncenter {
 }
 
 .case-study-article .project-type {
-    font-size: 22px;
-    padding: 0 200px;
+    font-size: 18px;
     margin: 0 auto;
     font-weight: 300;
+}
+
+.article-navigator {
+    opacity: 0.9;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.article-navigator a {
+    color: #333333;
+    transition: all 0.2s ease-in-out;
+}
+
+.article-navigator a:hover {
+    color: #02aeb3;
 }
